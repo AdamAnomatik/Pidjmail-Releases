@@ -1,5 +1,7 @@
 # Pidjmail
 
+При резервном копировании сохраняйте всю папку профиля с `encryption-key.json` и `Browser/Local State`, а также выбранные папки почты. Одного `profile.enc` недостаточно. Если ключ недоступен, можно выбрать полную резервную папку или создать новый профиль отдельно; исходные файлы автоматически не удаляются.
+
 [![Latest Release](https://img.shields.io/github/v/release/AdamAnomatik/Pidjmail-Releases?label=Последняя%20версия)](https://github.com/AdamAnomatik/Pidjmail-Releases/releases/latest)
 [![Downloads](https://img.shields.io/github/downloads/AdamAnomatik/Pidjmail-Releases/total?label=Загрузки)](https://github.com/AdamAnomatik/Pidjmail-Releases/releases)
 [![Windows](https://img.shields.io/badge/Платформа-Windows-0078D4)](https://github.com/AdamAnomatik/Pidjmail-Releases/releases/latest)
@@ -26,7 +28,7 @@
 
 ## Скачать
 
-Последняя версия доступна в разделе **Releases**. Версия 0.2.1 — ранняя рабочая сборка.
+Последняя версия доступна в разделе **Releases**. Версия 0.2.2 — ранняя рабочая сборка.
 
 ➡️ **[Скачать последнюю версию Pidjmail](https://github.com/AdamAnomatik/Pidjmail-Releases/releases/latest)**
 
@@ -42,6 +44,8 @@
 - Отдельная установка Node.js не нужна.
 
 ## Установка
+
+![Pidjmail installer](pidjmail-installer.png)
 
 1. Скачайте последний `Pidjmail-Setup-x.y.z-x64.exe`.
 2. Запустите установщик и выберите папку. Установка выполняется для текущего пользователя Windows.
@@ -73,10 +77,10 @@
 В PowerShell:
 
 ```powershell
-Get-FileHash .\Pidjmail-Setup-0.2.1-x64.exe -Algorithm SHA256
+Get-FileHash .\Pidjmail-Setup-0.2.2-x64.exe -Algorithm SHA256
 ```
 
-Полученное значение должно совпасть с файлом `Pidjmail-Setup-0.2.1-x64.sha256.txt`.
+Полученное значение должно совпасть с файлом `Pidjmail-Setup-0.2.2-x64.sha256.txt`.
 
 ## Сообщить об ошибке
 

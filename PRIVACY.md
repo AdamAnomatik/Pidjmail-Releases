@@ -1,6 +1,10 @@
 # Конфиденциальность / Privacy
 
-4 November 2026 · Pidjmail 0.2.1
+Ключ в `encryption-key.json` уже защищён Windows DPAPI; это не открытый пароль или ключ AES. Резервная копия должна включать его и `Browser/Local State`. При недоступном ключе прежние enc сохраняются; новый профиль создаётся отдельно только по выбору пользователя.
+
+The key in `encryption-key.json` is already wrapped by Windows DPAPI, not a plaintext password or AES key. Include it and `Browser/Local State` in backups. Original encrypted files are preserved when a key is unavailable; a separate fresh profile requires the user's explicit choice.
+
+4 November 2026 · Pidjmail 0.2.2
 
 ## Русский
 

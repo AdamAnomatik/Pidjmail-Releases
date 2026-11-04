@@ -1,5 +1,7 @@
 # Pidjmail
 
+Back up the complete profile folder, including `encryption-key.json` and `Browser/Local State`, plus your selected mail folders. `profile.enc` alone is insufficient. If its key is unavailable, choose a complete backup folder or explicitly create a separate new profile. Original files are not automatically deleted.
+
 [![Latest Release](https://img.shields.io/github/v/release/AdamAnomatik/Pidjmail-Releases?label=Latest%20Release)](https://github.com/AdamAnomatik/Pidjmail-Releases/releases/latest)
 [![Downloads](https://img.shields.io/github/downloads/AdamAnomatik/Pidjmail-Releases/total?label=Downloads)](https://github.com/AdamAnomatik/Pidjmail-Releases/releases)
 [![Windows](https://img.shields.io/badge/Platform-Windows-0078D4)](https://github.com/AdamAnomatik/Pidjmail-Releases/releases/latest)
@@ -26,7 +28,7 @@
 
 ## Download
 
-The latest release is available in **Releases**. Version 0.2.1 is an early working release.
+The latest release is available in **Releases**. Version 0.2.2 is an early working release.
 
 ➡️ **[Download the latest version of Pidjmail](https://github.com/AdamAnomatik/Pidjmail-Releases/releases/latest)**
 
@@ -42,6 +44,8 @@ The latest release is available in **Releases**. Version 0.2.1 is an early worki
 - Node.js is not required.
 
 ## Installation
+
+![Pidjmail installer](pidjmail-installer.png)
 
 1. Download the latest `Pidjmail-Setup-x.y.z-x64.exe`.
 2. Run the installer and choose an installation folder. Installation is for the current Windows user.
@@ -73,10 +77,10 @@ Real provider accounts and paid AI requests still require validation. Local TLS 
 You can verify the installer checksum in PowerShell:
 
 ```powershell
-Get-FileHash .\Pidjmail-Setup-0.2.1-x64.exe -Algorithm SHA256
+Get-FileHash .\Pidjmail-Setup-0.2.2-x64.exe -Algorithm SHA256
 ```
 
-The result must match the value published in `Pidjmail-Setup-0.2.1-x64.sha256.txt`.
+The result must match the value published in `Pidjmail-Setup-0.2.2-x64.sha256.txt`.
 
 ## Report an issue
 

@@ -1,5 +1,13 @@
 # История изменений / Changelog
 
+## 0.2.2 · 2026-11-04
+
+- Сохранение защищённого Windows ключа при переносе профиля и поиск подходящего прежнего ключа при ошибке открытия.
+- Новый профиль создаётся отдельно только по выбору пользователя; исходные зашифрованные файлы сохраняются.
+- Блок сайта в установщике оформлен как в Simpltask/SimplNote: значок, заголовок, описание и кнопка.
+
+Preserve the Windows-wrapped profile key during relocation, recover with an available matching key, and offer a separate fresh profile without deleting original files. Installer website block follows Simpltask/SimplNote styling.
+
 ## 0.2.1 · 2026-11-04
 
 - Быстрое двухфазное подключение с выбором папки и вложений; фоновая загрузка с прогрессом и временем.

@@ -1,0 +1,41 @@
+name: Сообщить об ошибке / Report a bug
+description: Ошибка или неожиданное поведение Pidjmail / Unexpected behavior
+title: "[Bug] "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: "Не публикуйте пароли, API-ключи, файлы профиля и переписку. Do not include credentials, profiles or private email."
+  - type: input
+    id: version
+    attributes:
+      label: Версия Pidjmail / Pidjmail version
+      placeholder: "0.2.0"
+    validations:
+      required: true
+  - type: input
+    id: windows
+    attributes:
+      label: Версия Windows / Windows version
+      placeholder: Windows 11 x64
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Что произошло / What happened
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Как повторить / Steps to reproduce
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Ожидаемое поведение / Expected behavior
+    validations:
+      required: true

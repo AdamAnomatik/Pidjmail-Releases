@@ -1,0 +1,7 @@
+*.exe
+*.7z
+*.zip
+*.asar
+*.map
+.env*
+node_modules/

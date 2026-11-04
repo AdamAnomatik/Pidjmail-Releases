@@ -1,5 +1,16 @@
 # История изменений / Changelog
 
+## 0.2.1 · 2026-11-04
+
+- Быстрое двухфазное подключение с выбором папки и вложений; фоновая загрузка с прогрессом и временем.
+- Настройки темы/языка работают во время синхронизации. Переименование/перенос папок и порядок разделов.
+- Просмотр/Save As или автоматическое сохранение вложений, независимые уведомления почты/календаря/досок, трей.
+- Правая панель ChatGPT/Claude: API или изолированное веб-приложение; вход зависит от сервиса, есть переход в браузер.
+- Новый значок, компактные настройки, About по образцу, ссылка на сайт и выбор ярлыка в установщике.
+
+Two-phase connection, chosen data folders, progressive background sync, responsive themes/language, folder editing, attachment modes, category notifications and tray. ChatGPT/Claude right-side API/web panels, refreshed icon/settings/About, installer website and desktop shortcut choice.
+
+
 ## [0.2.0] — 2026-11-04
 
 ### Русский

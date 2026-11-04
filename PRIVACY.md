@@ -1,55 +1,35 @@
 # Конфиденциальность / Privacy
 
-**Дата / Date:** 4 November 2026 · **Приложение / Application:** Pidjmail 0.2.0
+4 November 2026 · Pidjmail 0.2.1
 
 ## Русский
 
-### Локальные данные
+Почта соединяется напрямую с выбранным IMAP/SMTP-провайдером по TLS или обязательному STARTTLS. У Pidjmail нет собственного сервера почты, рекламного SDK или сбора аналитики. Чтение писем безопасным текстом не загружает внешние изображения и пиксели.
 
-Pidjmail хранит параметры ящиков и интерфейса, ограниченный кэш писем, черновики и очередь, подписи, аватар, контакты, события, задачи, правила и уведомления в профиле `%APPDATA%\Pidjmail`. Пароли почты и необязательные API-ключи входят в зашифрованный профиль. Шифрование Electron safeStorage использует защиту учётной записи Windows. Резервная копия профиля также зашифрована. Это не заменяет блокировку и защиту самого компьютера.
+После проверки подключения пользователь выбирает папку писем и загрузку вложений для работы без интернета. Кэш до 100 писем на папку и скачанные вложения шифруются Electron safeStorage с защитой учётной записи Windows. Профиль, пароли, API-ключи, черновики, очередь, контакты, события, задачи, подписи, аватар и настройки также зашифрованы. Путь виден в настройках хранения. По умолчанию профиль находится в соседней с установкой папке Pidjmail Data, на том же диске. Выбор другого диска для первого ящика переносит туда профиль. В %APPDATA%/Pidjmail-location.json хранится только указатель пути. При недоступном диске нет переключения на C:. При миграции прежний зашифрованный профиль сохраняется.
 
-### Сетевые соединения
+По умолчанию входящие вложения просматриваются в памяти. «Сохранить как…» записывает файл по выбранному пути. Включённое пользователем автоматическое сохранение записывает обычные, незашифрованные файлы в выбранную папку. Зашифрованный кэш для работы без интернета — отдельная настройка. Исходящие вложения входят в зашифрованную очередь/черновик.
 
-- Почта передаётся напрямую выбранному IMAP/SMTP-провайдеру по TLS или обязательному STARTTLS. У Pidjmail нет собственного сервера для вашей почты.
-- При включённом получении почты приложение периодически соединяется с провайдером и может держать IMAP IDLE-соединение.
-- AI-помощник обращается к OpenAI или Anthropic только после запуска запроса пользователем. Передаются запрос и явно выбранный контекст письма; вложения автоматически не отправляются. Для API действуют условия выбранного сервиса.
-- При запросе подтверждения прочтения отправляется стандартный заголовок с адресом отправителя. Получатель может отказаться отвечать.
-- Внешние ссылки открываются по действию пользователя в браузере. Скачивание выпусков обслуживается GitHub; применяются его правила.
+AI API отправляет промпт и выбранный пользователем контекст только по его команде; вложения автоматически не передаются. Веб-приложение ИИ загружает официальный сайт ChatGPT/Claude в отдельной изолированной сессии без доступа к почте и native API. Вход выполняется на сайте сервиса. Его правила, cookies и сетевые запросы действуют внутри этой страницы. Cookies самого сервиса сохраняются в зашифрованном профиле; хранилище веб-страницы работает в памяти. Удаление веб-подключения очищает эту сессию. Встроенный вход может ограничиваться сервисом, предусмотрен переход в браузер.
 
-Приложение не содержит собственного сбора аналитики, рекламного SDK или облачной синхронизации календаря, контактов и досок. Текстовое чтение писем не загружает внешние изображения и пиксели отслеживания.
+Почта проверяется автоматически, в том числе через IMAP IDLE. Уведомления могут показывать тему письма или название задачи; текст и звук почты, календаря и досок настраиваются отдельно. Сворачивание сохраняет работу в трее, полный выход её прекращает. Подтверждения прочтения зависят от решения получателя. Внешние ссылки открываются по действию пользователя. Выпуски обслуживает GitHub.
 
-### Файлы и уведомления
+Обычное удаление приложения сохраняет профиль и папки писем. Отключение ящика не удаляет серверную почту и локальную папку. Для окончательного удаления закройте приложение и удалите профиль, выбранные папки и собственные резервные копии; сохранённые обычные файлы удаляются отдельно. Не переносите зашифрованный профиль между пользователями Windows.
 
-Просмотр поддерживаемых входящих вложений выполняется в памяти без отдельной записи файла. «Сохранить как…» записывает файл по выбранному пути. Выбранный аватар сохраняется в профиле; исходящие вложения входят в локальный черновик/очередь. Системные уведомления могут показывать тему письма или название задачи; их можно отключить в настройках.
-
-### Хранение и удаление
-
-Обычное удаление программы сохраняет профиль. Для окончательного удаления данных закройте приложение и удалите его профиль и собственные резервные копии. Сохранённые через «Сохранить как…» файлы удаляются отдельно. Письма на сервере провайдера управляются отдельно; действия с письмами и папками могут синхронизироваться с сервером. Не переносите зашифрованный профиль между пользователями Windows.
-
-Не прикладывайте профиль, пароли, ключи или личную переписку к публичным [обращениям](https://github.com/AdamAnomatik/Pidjmail-Releases/issues). Для уязвимостей см. [SECURITY.md](SECURITY.md).
+Не публикуйте пароли, ключи, профили и переписку в [обращениях](https://github.com/AdamAnomatik/Pidjmail-Releases/issues). Уязвимости: [SECURITY.md](SECURITY.md).
 
 ## English
 
-### Local data
+Mail connects directly to the selected provider through TLS or mandatory STARTTLS. Pidjmail has no mail relay, advertising SDK or usage analytics. Text-only mail display does not load remote images or tracking pixels.
 
-Pidjmail stores account and interface settings, a bounded mail cache, drafts and delivery queue, signatures, avatar, contacts, events, tasks, rules and notifications under `%APPDATA%\Pidjmail`. Mail passwords and optional API keys are included in the encrypted profile. Electron safeStorage uses Windows account protection; the backup is encrypted as well. This does not replace protection of the computer itself.
+After verification, choose a mail folder and whether to cache attachments offline. The bounded cache (100 messages per folder), offline attachments and application profile are encrypted using Electron safeStorage and Windows user protection. The profile includes credentials, optional API keys, drafts, queue, contacts, events, tasks, signatures, avatar and settings. Paths are shown in Data storage. The default profile is in Pidjmail Data beside the installation directory, on the same drive. Choosing a different drive for the first mailbox moves the profile too. %APPDATA%/Pidjmail-location.json holds only its path. There is no fallback to C: if a drive is unavailable. Legacy encrypted profiles are preserved during migration.
 
-### Network connections
+Incoming attachments are previewed in memory by default. Save As writes a file to the selected path. User-enabled automatic saving exports ordinary, unencrypted files to the chosen folder. Encrypted offline caching is a separate option. Outgoing attachments are included in encrypted drafts and queue.
 
-- Mail connects directly to the selected IMAP/SMTP provider using TLS or mandatory STARTTLS. Pidjmail does not operate a mail relay for your messages.
-- Automatic retrieval periodically contacts the provider and may keep an IMAP IDLE connection open.
-- The AI assistant contacts OpenAI or Anthropic only after the user starts a request. The prompt and explicitly selected mail context are transmitted; attachments are not sent automatically. The chosen service's terms apply.
-- Requesting a read receipt adds a standard header containing the sender's address. The recipient may decline to respond.
-- External links open in the browser after a user action. GitHub serves release downloads under its own policies.
+AI API requests send a prompt and user-selected context only on command; attachments are not sent automatically. AI web apps load the official ChatGPT/Claude website in an isolated session without mail or native API access. Sign-in happens on the provider page, under its terms, cookies and network requests. First-party session cookies are stored only in the encrypted profile; other web storage is in memory. Removing the web connection clears this session. A service may restrict embedded login; a browser fallback is available.
 
-The application has no built-in usage analytics, advertising SDK or cloud synchronization of calendar, contacts and boards. Text-only email display does not load remote images or tracking pixels.
+Mail updates automatically, including through IMAP IDLE. Notifications may show mail subjects or task titles. Mail, Calendar and Boards have separate text/sound settings. Minimize keeps the app running in the tray; Quit stops it. Read receipts depend on recipients. External links open on user action. GitHub hosts release downloads.
 
-### Files and notifications
+Normal uninstall preserves the profile and mail folders. Disconnecting a mailbox preserves its local folder and server mail. For permanent deletion, quit and remove the profile, chosen folders and backup copies; exported files are separate. Do not transfer encrypted profiles between Windows users.
 
-Supported incoming attachments are previewed in memory without writing a separate file. Save As writes to the selected location. An avatar is stored in the profile; outgoing attachments are part of local drafts and the delivery queue. System notifications may show email subjects or task titles and can be disabled in Settings.
-
-### Retention and deletion
-
-Normal uninstall preserves the profile. To remove local data permanently, close the application and remove the profile and your backup copies. Files explicitly saved through Save As are separate. Mail on the provider's server is managed separately; message and folder actions may synchronize to that server. Encrypted profiles should not be transferred between Windows users.
-
-Do not attach profiles, passwords, API keys or private mail to public [issues](https://github.com/AdamAnomatik/Pidjmail-Releases/issues). Follow [SECURITY.md](SECURITY.md) for vulnerabilities.
+Never publish credentials, profiles or private mail in [issues](https://github.com/AdamAnomatik/Pidjmail-Releases/issues). See [SECURITY.md](SECURITY.md).

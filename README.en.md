@@ -19,14 +19,14 @@
 - Incoming-mail filters, sender grouping, Ctrl+F search and restoration from Trash.
 - In-memory previews for text, images and PDF, with an explicit **Save As** action.
 - Local calendar, contacts and kanban boards; turn an email into an event, task or contact.
-- Sound preferences, reminders, profile pictures and account signatures.
+- Separate Mail / Calendar / Boards notifications, tray reminders, profile pictures and account signatures.
 - Russian and English interface; light, dark and system themes.
-- Optional OpenAI / Claude assistant using your own API key and model, with explicit control over sending email text.
+- OpenAI / Claude in a right-side chat panel: web app sign-in or your own API key and model. Embedded sign-in depends on the service; a browser fallback is available.
 - Encrypted local profiles, with separate real-mail and demo workspaces.
 
 ## Download
 
-The latest release is available in **Releases**. Version 0.2.0 is an early working release.
+The latest release is available in **Releases**. Version 0.2.1 is an early working release.
 
 ➡️ **[Download the latest version of Pidjmail](https://github.com/AdamAnomatik/Pidjmail-Releases/releases/latest)**
 
@@ -45,7 +45,7 @@ The latest release is available in **Releases**. Version 0.2.0 is an early worki
 
 1. Download the latest `Pidjmail-Setup-x.y.z-x64.exe`.
 2. Run the installer and choose an installation folder. Installation is for the current Windows user.
-3. Open Pidjmail from the Start menu.
+3. Choose whether to create a desktop shortcut, then open Pidjmail from the Start menu or desktop. Minimizing keeps it running in the tray; Quit closes it.
 4. Connect an account using an app password, or choose **Take a look first** to explore sample data.
 
 The application and installer are currently **unsigned**. Provider-specific setup instructions are available in Settings.
@@ -56,13 +56,11 @@ Close Pidjmail and run the new installer. Automatic updating is not available ye
 
 ## Data location
 
-User data is stored locally:
+After IMAP/SMTP verification, choose a mail data folder and whether to download attachments. Downloading continues in the background. Change the folder under Settings → Data storage. Preview/manual saving is the default; automatic attachment saving uses an explicitly chosen folder.
 
-```text
-%APPDATA%\Pidjmail
-```
+The encrypted application profile defaults to `Pidjmail Data` beside the installation directory, on the same drive. Choosing another drive for the first mailbox also moves the profile. `%APPDATA%/Pidjmail-location.json` contains only the path pointer. An unavailable drive causes an error, never a silent fallback to C:. A legacy encrypted profile is preserved during migration.
 
-Profiles, mail credentials and optional API keys are encrypted using Windows user protection. Mail connects directly to your provider. Optional AI requests go to the selected provider only after your action. See [PRIVACY.md](PRIVACY.md).
+Profiles, mail credentials and optional API keys are encrypted using Windows user protection. Mail connects directly to your provider. Optional AI API requests go to the selected provider after your action. An enabled AI web app loads the official website in an isolated session. See [PRIVACY.md](PRIVACY.md).
 
 ## Current limitations
 
@@ -75,10 +73,10 @@ Real provider accounts and paid AI requests still require validation. Local TLS 
 You can verify the installer checksum in PowerShell:
 
 ```powershell
-Get-FileHash .\Pidjmail-Setup-0.2.0-x64.exe -Algorithm SHA256
+Get-FileHash .\Pidjmail-Setup-0.2.1-x64.exe -Algorithm SHA256
 ```
 
-The result must match the value published in `Pidjmail-Setup-0.2.0-x64.sha256.txt`.
+The result must match the value published in `Pidjmail-Setup-0.2.1-x64.sha256.txt`.
 
 ## Report an issue
 

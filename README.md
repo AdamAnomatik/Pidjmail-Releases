@@ -18,17 +18,17 @@ Back up the complete profile folder, including `encryption-key.json` and `Browse
 
 - Multiple IMAP/SMTP accounts and a unified inbox, server folders and incoming mail updates through IMAP IDLE.
 - Replies, forwarding, drafts, scheduled sending and cancellation before SMTP transmission.
-- Incoming-mail filters, sender grouping, Ctrl+F search and restoration from Trash.
+- Incoming-mail filters, unread sender cards with separate message windows, Ctrl+F search and restoration from Trash.
 - In-memory previews for text, images and PDF, with an explicit **Save As** action.
 - Local calendar, contacts and kanban boards; turn an email into an event, task or contact.
 - Separate Mail / Calendar / Boards notifications, tray reminders, profile pictures and account signatures.
-- Russian and English interface; light, dark and system themes.
+- Russian and English interface; light, dark and system themes, custom app accents and per-folder/per-sender colours.
 - OpenAI / Claude in a right-side chat panel: web app sign-in or your own API key and model. Embedded sign-in depends on the service; a browser fallback is available.
 - Encrypted local profiles, with separate real-mail and demo workspaces.
 
 ## Download
 
-The latest release is available in **Releases**. Version 0.2.3 is an early working release.
+The latest release is available in **Releases**. Version 0.2.4 is an early working release.
 
 ➡️ **[Download the latest version of Pidjmail](https://github.com/AdamAnomatik/Pidjmail-Releases/releases/latest)**
 
@@ -77,10 +77,10 @@ Real provider accounts and paid AI requests still require validation. Local TLS 
 You can verify the installer checksum in PowerShell:
 
 ```powershell
-Get-FileHash .\Pidjmail-Setup-0.2.3-x64.exe -Algorithm SHA256
+Get-FileHash .\Pidjmail-Setup-0.2.4-x64.exe -Algorithm SHA256
 ```
 
-The result must match the value published in `Pidjmail-Setup-0.2.3-x64.sha256.txt`.
+The result must match the value published in `Pidjmail-Setup-0.2.4-x64.sha256.txt`.
 
 ## Report an issue
 

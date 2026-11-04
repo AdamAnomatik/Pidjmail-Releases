@@ -4,7 +4,7 @@
 
 The key in `encryption-key.json` is already wrapped by Windows DPAPI, not a plaintext password or AES key. Include it and `Browser/Local State` in backups. Original encrypted files are preserved when a key is unavailable; a separate fresh profile requires the user's explicit choice.
 
-4 November 2026 · Pidjmail 0.2.2
+4 November 2026 · Pidjmail 0.2.3
 
 ## Русский
 

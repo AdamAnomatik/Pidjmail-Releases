@@ -28,7 +28,7 @@ Back up the complete profile folder, including `encryption-key.json` and `Browse
 
 ## Download
 
-The latest release is available in **Releases**. Version 0.2.2 is an early working release.
+The latest release is available in **Releases**. Version 0.2.3 is an early working release.
 
 ➡️ **[Download the latest version of Pidjmail](https://github.com/AdamAnomatik/Pidjmail-Releases/releases/latest)**
 
@@ -77,10 +77,10 @@ Real provider accounts and paid AI requests still require validation. Local TLS 
 You can verify the installer checksum in PowerShell:
 
 ```powershell
-Get-FileHash .\Pidjmail-Setup-0.2.2-x64.exe -Algorithm SHA256
+Get-FileHash .\Pidjmail-Setup-0.2.3-x64.exe -Algorithm SHA256
 ```
 
-The result must match the value published in `Pidjmail-Setup-0.2.2-x64.sha256.txt`.
+The result must match the value published in `Pidjmail-Setup-0.2.3-x64.sha256.txt`.
 
 ## Report an issue
 

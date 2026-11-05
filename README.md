@@ -16,6 +16,8 @@ Back up the complete profile folder, including `encryption-key.json` and `Browse
 
 ## Features
 
+New in 0.2.9: a separate chat window alongside mail, remembered chat service, compact navigation, per-service zoom, badges and desktop notifications. Recipient suggestions use contacts and cached sent mail; inbox refresh runs independently of long folder scans.
+
 - Date-based mail, right-side reading or a Mail.ru-style list; persistent panel widths and collapsible navigation.
 - MDN read-receipt checkmarks and opt-in local MCP with in-app send/Trash approval. [MCP setup (Russian)](MCP.ru.md).
 
@@ -35,9 +37,11 @@ Back up the complete profile folder, including `encryption-key.json` and `Browse
 
 <p align="center"><img src="pidjmail-dates.png" alt="Date-based mail layout with demo messages" width="1000"></p>
 
+<p align="center"><img src="pidjmail-recipients.png" alt="Recipient suggestions with demo contacts" width="1000"></p>
+
 ## Download
 
-The latest release is available in **Releases**. Version 0.2.8 is an early working release.
+The latest release is available in **Releases**. Version 0.2.9 is an early working release.
 
 ➡️ **[Download the latest version of Pidjmail](https://github.com/AdamAnomatik/Pidjmail-Releases/releases/latest)**
 
@@ -75,6 +79,10 @@ The encrypted application profile defaults to `Pidjmail Data` beside the install
 
 Profiles, mail credentials and optional API keys are encrypted using Windows user protection. Mail connects directly to your provider. Optional AI API requests go to the selected provider after your action. An enabled AI web app loads the official website in an isolated session. See [PRIVACY.md](PRIVACY.md).
 
+## Notifications
+
+Notifications: enable them for the service and under Pidjmail Settings → Sounds and reminders → Chats. Use the test button; Windows permissions and Do not disturb may suppress banners. Badges depend on service titles/web notifications, not a universal server unread count. Service Worker-only notifications are not separately forwarded.
+
 ## Current limitations
 
 The calendar, contacts and boards are local. Reminders and scheduled delivery require the application to be running. The cache is limited to 100 messages per folder, and search uses the cache. OAuth and cloud calendar/contact synchronization are not available yet. Chat integrations use official web apps; some services require sign-in again after restart, and calls/voice recording use your browser. Actual messaging after account sign-in has not been verified. Read receipts depend on the recipient's client; transmitted SMTP mail cannot be universally recalled. Office attachments do not have a built-in preview.
@@ -86,10 +94,10 @@ Real provider accounts and paid AI requests still require validation. Local TLS 
 You can verify the installer checksum in PowerShell:
 
 ```powershell
-Get-FileHash .\Pidjmail-Setup-0.2.8-x64.exe -Algorithm SHA256
+Get-FileHash .\Pidjmail-Setup-0.2.9-x64.exe -Algorithm SHA256
 ```
 
-The result must match the value published in `Pidjmail-Setup-0.2.8-x64.sha256.txt`.
+The result must match the value published in `Pidjmail-Setup-0.2.9-x64.sha256.txt`.
 
 ## Report an issue
 

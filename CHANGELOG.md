@@ -1,5 +1,14 @@
 # История изменений / Changelog
 
+## 0.2.9 · 2026-11-05
+
+- Чат в отдельном окне одновременно с почтой; последний выбранный сервис открывается снова.
+- Компактное меню без почтовых папок в чатах; VK 85% по умолчанию, сохраняемый масштаб 65–125%.
+- Всплывающие уведомления и счётчик чатов; отдельные настройки для четырёх разделов, проверка баннера и настройки Windows. Показ зависит от разрешений ОС и механизма уведомлений сервиса.
+- Приоритетная проверка входящих во время общего обхода папок, защита свежих данных от устаревшего результата.
+- Подсказки адресатов по контактам и загруженным исходящим в Кому/Копия/Скрытая копия; имя, адрес, транслитерация, клавиатура.
+- Меньше обработки почтового кэша при сохранении черновиков/настроек, бинарные вложения остаются в main. Большой пользовательский ящик не использовался для измерения скорости.
+
 ## 0.2.8 · 2026-11-05
 
 - Три режима почты: по датам с подсветкой непрочитанных, прежнее чтение справа и компактный список в стиле Mail.ru. Выбор в настройках внешнего вида.
@@ -55,7 +64,6 @@ Unread sender cards and separate message windows, a visible AI entry, fixed fold
 
 Includes 0.2.2 key preservation and installer styling, plus safe orphaned-backup recovery without an empty reset or delivery replay.
 
-
 ## 0.2.2 · 2026-11-04
 
 - Сохранение защищённого Windows ключа при переносе профиля и поиск подходящего прежнего ключа при ошибке открытия.
@@ -73,7 +81,6 @@ Preserve the Windows-wrapped profile key during relocation, recover with an avai
 - Новый значок, компактные настройки, About по образцу, ссылка на сайт и выбор ярлыка в установщике.
 
 Two-phase connection, chosen data folders, progressive background sync, responsive themes/language, folder editing, attachment modes, category notifications and tray. ChatGPT/Claude right-side API/web panels, refreshed icon/settings/About, installer website and desktop shortcut choice.
-
 
 ## [0.2.0] — 2026-11-04
 

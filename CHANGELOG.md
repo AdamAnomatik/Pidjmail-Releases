@@ -1,5 +1,14 @@
 # История изменений / Changelog
 
+## 0.2.6 · 2026-11-05
+
+- Выбор во вкладке «Чат»: VK WorkSpace, Google Chat, Telegram, WhatsApp, MAX.
+- Отдельные изолированные веб-сессии, переключение и отключение выбранного сервиса, Save As для файлов, управление разрешением уведомлений.
+- Cookies и localStorage шифруются в профиле. Часть сервисов может требовать повторный вход после перезапуска; звонки/запись голоса открываются в браузере.
+- Проверены настоящие страницы до авторизации, тестовые сессии и изоляция. Учётные данные и QR-подтверждения не вводились; реальная переписка пока не проверена.
+
+Five official web chat integrations with a service picker/switcher and isolated sessions. Encrypted cookies/localStorage, explicit Save As, and per-service notification permission. Some services require re-login after restart; calls/voice recording use your browser. Sign-in pages were checked, actual authenticated messaging was not tested. Unsigned installer.
+
 ## 0.2.5 · 2026-11-05
 
 - Восстановление интерфейса при падении процесса и возврате из трея; проверка после пробуждения и разблокировки Windows.

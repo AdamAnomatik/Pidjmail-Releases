@@ -24,6 +24,8 @@ AI API отправляет промпт и выбранный пользова�
 
 Ограниченный локальный журнал renderer-health.jsonl в текущей папке профиля содержит только время и системные коды состояния интерфейса. В нём нет адресов, переписки, паролей и URL; автоматической отправки журнала нет.
 
+Вкладка «Чат» загружает официальные веб-приложения VK WorkSpace, Google Chat, Telegram, WhatsApp и MAX в раздельных сессиях. Почта и нативные функции Pidjmail недоступны этим страницам. При подключении сервис получает обычные запросы браузера по своим условиям. Cookies и ограниченный localStorage хранятся в зашифрованном профиле; IndexedDB и остальное веб-хранилище остаются в памяти, поэтому возможен повторный вход. Микрофон/камера запрещены, уведомления включаются по выбору. Загрузка файла открывает Save As. Отключение очищает активную сессию и её запись в текущем профиле; серверные сообщения и обычные зашифрованные резервные копии сохраняются.
+
 ## English
 
 Mail connects directly to the selected provider through TLS or mandatory STARTTLS. Pidjmail has no mail relay, advertising SDK or usage analytics. Text-only mail display does not load remote images or tracking pixels.
@@ -41,3 +43,5 @@ Normal uninstall preserves the profile and mail folders. Disconnecting a mailbox
 Never publish credentials, profiles or private mail in [issues](https://github.com/AdamAnomatik/Pidjmail-Releases/issues). See [SECURITY.md](SECURITY.md).
 
 A bounded local renderer-health.jsonl in the current profile folder records timestamps and interface status codes only, without addresses, mail content, credentials or URLs. It is not uploaded automatically.
+
+Chat loads official VK WorkSpace, Google Chat, Telegram, WhatsApp and MAX web apps in separate sessions without mail/native bridge access. These services receive normal browser requests under their terms. Cookies and bounded localStorage are encrypted in the profile; IndexedDB and other web storage are memory-only, so sign-in may be required again. Microphone/camera permissions are denied, notifications are optional, file downloads use Save As. Disconnect clears the active session and its current profile entry; server messages and normal encrypted backups remain.

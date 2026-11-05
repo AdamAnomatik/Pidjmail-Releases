@@ -23,13 +23,16 @@ Back up the complete profile folder, including `encryption-key.json` and `Browse
 - Local calendar, contacts and kanban boards; turn an email into an event, task or contact.
 - Separate Mail / Calendar / Boards notifications, tray reminders, profile pictures and account signatures.
 - Russian and English interface; light, dark and system themes, custom app accents and per-folder/per-sender colours.
+- VK WorkSpace, Google Chat, Telegram, WhatsApp and MAX through separate web sessions, with a service picker and switcher.
 - OpenAI / Claude in a right-side chat panel: web app sign-in or your own API key and model. Embedded sign-in depends on the service; a browser fallback is available.
 - Encrypted local profiles, with separate real-mail and demo workspaces.
 - Interface recovery after a renderer crash, tray restore checks and a manual Restore interface tray action.
 
+<p align="center"><img src="pidjmail-chats.png" alt="Chat service picker" width="1000"></p>
+
 ## Download
 
-The latest release is available in **Releases**. Version 0.2.5 is an early working release.
+The latest release is available in **Releases**. Version 0.2.6 is an early working release.
 
 ➡️ **[Download the latest version of Pidjmail](https://github.com/AdamAnomatik/Pidjmail-Releases/releases/latest)**
 
@@ -69,7 +72,7 @@ Profiles, mail credentials and optional API keys are encrypted using Windows use
 
 ## Current limitations
 
-The calendar, contacts and boards are local. Reminders and scheduled delivery require the application to be running. The cache is limited to 100 messages per folder, and search uses the cache. OAuth, cloud calendar/contact synchronization and human chat are not available yet. Read receipts depend on the recipient's client; transmitted SMTP mail cannot be universally recalled. Office attachments do not have a built-in preview.
+The calendar, contacts and boards are local. Reminders and scheduled delivery require the application to be running. The cache is limited to 100 messages per folder, and search uses the cache. OAuth and cloud calendar/contact synchronization are not available yet. Chat integrations use official web apps; some services require sign-in again after restart, and calls/voice recording use your browser. Actual messaging after account sign-in has not been verified. Read receipts depend on the recipient's client; transmitted SMTP mail cannot be universally recalled. Office attachments do not have a built-in preview.
 
 Real provider accounts and paid AI requests still require validation. Local TLS protocol tests and desktop installation tests have passed. This public repository contains distribution documentation and release assets; source code is maintained privately.
 
@@ -78,10 +81,10 @@ Real provider accounts and paid AI requests still require validation. Local TLS 
 You can verify the installer checksum in PowerShell:
 
 ```powershell
-Get-FileHash .\Pidjmail-Setup-0.2.5-x64.exe -Algorithm SHA256
+Get-FileHash .\Pidjmail-Setup-0.2.6-x64.exe -Algorithm SHA256
 ```
 
-The result must match the value published in `Pidjmail-Setup-0.2.5-x64.sha256.txt`.
+The result must match the value published in `Pidjmail-Setup-0.2.6-x64.sha256.txt`.
 
 ## Report an issue
 

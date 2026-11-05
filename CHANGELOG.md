@@ -1,5 +1,13 @@
 # История изменений / Changelog
 
+## 0.2.7 · 2026-11-05
+
+- VK WorkSpace открывает отдельный веб-клиент мессенджера вместо оболочки со всеми сервисами.
+- Сохранённые настройки и профиль не сбрасываются. VK может попросить войти заново на отдельной странице чатов.
+- Проверены настоящий экран до входа и автоматические сценарии подключения/сессий. Список чатов под реальным аккаунтом после изменения адреса пока не проверен.
+
+VK WorkSpace now opens the standalone messenger instead of the full suite shell. Existing profile/settings remain; VK may request sign-in again. The real welcome page and automated integration tests were checked; authenticated chat display still needs user verification.
+
 ## 0.2.6 · 2026-11-05
 
 - Выбор во вкладке «Чат»: VK WorkSpace, Google Chat, Telegram, WhatsApp, MAX.

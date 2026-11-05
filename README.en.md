@@ -23,7 +23,7 @@ Back up the complete profile folder, including `encryption-key.json` and `Browse
 - Local calendar, contacts and kanban boards; turn an email into an event, task or contact.
 - Separate Mail / Calendar / Boards notifications, tray reminders, profile pictures and account signatures.
 - Russian and English interface; light, dark and system themes, custom app accents and per-folder/per-sender colours.
-- VK WorkSpace, Google Chat, Telegram, WhatsApp and MAX through separate web sessions, with a service picker and switcher.
+- VK WorkSpace (standalone messenger), Google Chat, Telegram, WhatsApp and MAX through separate web sessions, with a service picker and switcher.
 - OpenAI / Claude in a right-side chat panel: web app sign-in or your own API key and model. Embedded sign-in depends on the service; a browser fallback is available.
 - Encrypted local profiles, with separate real-mail and demo workspaces.
 - Interface recovery after a renderer crash, tray restore checks and a manual Restore interface tray action.
@@ -32,7 +32,7 @@ Back up the complete profile folder, including `encryption-key.json` and `Browse
 
 ## Download
 
-The latest release is available in **Releases**. Version 0.2.6 is an early working release.
+The latest release is available in **Releases**. Version 0.2.7 is an early working release.
 
 ➡️ **[Download the latest version of Pidjmail](https://github.com/AdamAnomatik/Pidjmail-Releases/releases/latest)**
 
@@ -81,10 +81,10 @@ Real provider accounts and paid AI requests still require validation. Local TLS 
 You can verify the installer checksum in PowerShell:
 
 ```powershell
-Get-FileHash .\Pidjmail-Setup-0.2.6-x64.exe -Algorithm SHA256
+Get-FileHash .\Pidjmail-Setup-0.2.7-x64.exe -Algorithm SHA256
 ```
 
-The result must match the value published in `Pidjmail-Setup-0.2.6-x64.sha256.txt`.
+The result must match the value published in `Pidjmail-Setup-0.2.7-x64.sha256.txt`.
 
 ## Report an issue
 

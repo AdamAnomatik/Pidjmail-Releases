@@ -28,7 +28,7 @@
 
 ## Скачать
 
-Последняя версия доступна в разделе **Releases**. Версия 0.2.4 — ранняя рабочая сборка.
+Последняя версия доступна в разделе **Releases**. Версия 0.2.5 — ранняя рабочая сборка.
 
 ➡️ **[Скачать последнюю версию Pidjmail](https://github.com/AdamAnomatik/Pidjmail-Releases/releases/latest)**
 
@@ -77,10 +77,10 @@
 В PowerShell:
 
 ```powershell
-Get-FileHash .\Pidjmail-Setup-0.2.4-x64.exe -Algorithm SHA256
+Get-FileHash .\Pidjmail-Setup-0.2.5-x64.exe -Algorithm SHA256
 ```
 
-Полученное значение должно совпасть с файлом `Pidjmail-Setup-0.2.4-x64.sha256.txt`.
+Полученное значение должно совпасть с файлом `Pidjmail-Setup-0.2.5-x64.sha256.txt`.
 
 ## Сообщить об ошибке
 

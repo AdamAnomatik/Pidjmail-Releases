@@ -22,6 +22,8 @@ AI API отправляет промпт и выбранный пользова�
 
 Не публикуйте пароли, ключи, профили и переписку в [обращениях](https://github.com/AdamAnomatik/Pidjmail-Releases/issues). Уязвимости: [SECURITY.md](SECURITY.md).
 
+Ограниченный локальный журнал renderer-health.jsonl в текущей папке профиля содержит только время и системные коды состояния интерфейса. В нём нет адресов, переписки, паролей и URL; автоматической отправки журнала нет.
+
 ## English
 
 Mail connects directly to the selected provider through TLS or mandatory STARTTLS. Pidjmail has no mail relay, advertising SDK or usage analytics. Text-only mail display does not load remote images or tracking pixels.
@@ -37,3 +39,5 @@ Mail updates automatically, including through IMAP IDLE. Notifications may show 
 Normal uninstall preserves the profile and mail folders. Disconnecting a mailbox preserves its local folder and server mail. For permanent deletion, quit and remove the profile, chosen folders and backup copies; exported files are separate. Do not transfer encrypted profiles between Windows users.
 
 Never publish credentials, profiles or private mail in [issues](https://github.com/AdamAnomatik/Pidjmail-Releases/issues). See [SECURITY.md](SECURITY.md).
+
+A bounded local renderer-health.jsonl in the current profile folder records timestamps and interface status codes only, without addresses, mail content, credentials or URLs. It is not uploaded automatically.

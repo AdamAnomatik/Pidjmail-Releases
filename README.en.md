@@ -16,6 +16,10 @@ Back up the complete profile folder, including `encryption-key.json` and `Browse
 
 ## Features
 
+New in 0.2.11: Google Sheets has its own list and read-only viewer, browser sign-in and a guide for setting up your own Google OAuth client. Mail history loads as you browse with no overall 100-message cap; only older headers are fetched, with text loaded on opening. [Google setup (Russian)](GOOGLE-SHEETS.ru.md).
+
+<p align="center"><img src="pidjmail-sheets.png" alt="Google Sheets viewer with sample data" width="1000"></p>
+
 New in 0.2.10: two panes in one window — mail, calendar, contacts or boards alongside chat. Click Two panes in the top toolbar, swap sides, drag the divider or stack the panes. The layout is saved.
 
 <p align="center"><img src="pidjmail-dual.png" alt="Two panes with demo mail and a chat service picker" width="1000"></p>
@@ -45,7 +49,7 @@ New in 0.2.9: a separate chat window alongside mail, remembered chat service, co
 
 ## Download
 
-The latest release is available in **Releases**. Version 0.2.10 is an early working release.
+The latest release is available in **Releases**. Version 0.2.11 is an early working release.
 
 ➡️ **[Download the latest version of Pidjmail](https://github.com/AdamAnomatik/Pidjmail-Releases/releases/latest)**
 
@@ -89,7 +93,7 @@ Notifications: enable them for the service and under Pidjmail Settings → Sound
 
 ## Current limitations
 
-The calendar, contacts and boards are local. Reminders and scheduled delivery require the application to be running. The cache is limited to 100 messages per folder, and search uses the cache. OAuth and cloud calendar/contact synchronization are not available yet. Chat integrations use official web apps; some services require sign-in again after restart, and calls/voice recording use your browser. Actual messaging after account sign-in has not been verified. Read receipts depend on the recipient's client; transmitted SMTP mail cannot be universally recalled. Office attachments do not have a built-in preview.
+The calendar, contacts and boards are local. Reminders and scheduled delivery require the application to be running. History loads in batches of 100 as you browse, without an overall message cap, and search uses the cache. Mail OAuth and cloud calendar/contact synchronization are not available yet. Chat integrations use official web apps; some services require sign-in again after restart, and calls/voice recording use your browser. Actual messaging after account sign-in has not been verified. Read receipts depend on the recipient's client; transmitted SMTP mail cannot be universally recalled. Office attachments do not have a built-in preview.
 
 Real provider accounts and paid AI requests still require validation. Local TLS protocol tests and desktop installation tests have passed. This public repository contains distribution documentation and release assets; source code is maintained privately.
 

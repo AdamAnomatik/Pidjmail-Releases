@@ -16,6 +16,12 @@ Back up the complete profile folder, including `encryption-key.json` and `Browse
 
 ## Features
 
+New in 0.2.12: choose both workspace panes independently, with saved section choices. Chat controls stay on one line, with extra actions under the menu in narrow panes. Set shared popup position, background colour and display time under Settings → Sounds and reminders → Desktop popups. The settings apply to mail, calendar, boards and connected chats; a Windows notification style remains available.
+
+<p align="center"><img src="pidjmail-panes.png" alt="Independent pane choices with demo mail and sheets" width="1000"></p>
+
+<p align="center"><img src="pidjmail-popup.png" alt="Pidjmail notification preview" width="360"></p>
+
 New in 0.2.11: Google Sheets has its own list and read-only viewer, browser sign-in and a guide for setting up your own Google OAuth client. Mail history loads as you browse with no overall 100-message cap; only older headers are fetched, with text loaded on opening. [Google setup (Russian)](GOOGLE-SHEETS.ru.md).
 
 <p align="center"><img src="pidjmail-sheets.png" alt="Google Sheets viewer with sample data" width="1000"></p>
@@ -49,7 +55,7 @@ New in 0.2.9: a separate chat window alongside mail, remembered chat service, co
 
 ## Download
 
-The latest release is available in **Releases**. Version 0.2.11 is an early working release.
+The latest release is available in **Releases**. Version 0.2.12 is an early working release.
 
 ➡️ **[Download the latest version of Pidjmail](https://github.com/AdamAnomatik/Pidjmail-Releases/releases/latest)**
 

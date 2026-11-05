@@ -1,5 +1,15 @@
 # История изменений / Changelog
 
+## 0.2.8 · 2026-11-05
+
+- Три режима почты: по датам с подсветкой непрочитанных, прежнее чтение справа и компактный список в стиле Mail.ru. Выбор в настройках внешнего вида.
+- Изменение ширины главного меню, дат, списка, планов дня и чата ИИ; сворачивание меню. Размеры сохраняются.
+- Компактное меню сервисов чата; значок ИИ без текста перенесён к аватару после горячих клавиш.
+- Серые/синие галочки исходящих по подтверждениям MDN и настройка запроса для новых писем. Отсутствие подтверждения не означает «не прочитано».
+- Локальный MCP: 13 инструментов, отдельный отзываемый ключ, экспорт конфигурации, подтверждение отправки/корзины внутри Pidjmail. [Руководство](MCP.ru.md). Публичный сервер/туннель и вход в аккаунты ИИ не настроены.
+
+Three mail layouts, unread date highlights, persistent panel resizing and collapsed navigation, a compact chat picker and relocated AI icon. Outgoing read-receipt checkmarks reflect matching MDN confirmations. Opt-in local MCP with a revocable key and in-app send/Trash approval. Browser access requires a separately configured secure connection. Unsigned Windows installer.
+
 ## 0.2.7 · 2026-11-05
 
 - VK WorkSpace открывает отдельный веб-клиент мессенджера вместо оболочки со всеми сервисами.

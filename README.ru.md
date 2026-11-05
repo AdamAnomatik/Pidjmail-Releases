@@ -16,6 +16,9 @@
 
 ## Возможности
 
+- Рабочее окно по датам, с чтением справа или списком в стиле Mail.ru; сохраняемые ширины панелей и сворачивание меню.
+- Галочки подтверждённых MDN в отправленных; локальный MCP с подтверждением отправки/корзины. [Подключение MCP](MCP.ru.md).
+
 - Несколько ящиков IMAP/SMTP, общий список, серверные папки и ускоренное получение входящих через IMAP IDLE.
 - Ответы, пересылка, черновики, отложенная отправка и отмена до передачи SMTP.
 - Фильтры входящей почты, группировка по отправителю, поиск Ctrl+F, восстановление из корзины.
@@ -29,9 +32,11 @@
 
 <p align="center"><img src="pidjmail-chats.png" alt="Chat service picker" width="1000"></p>
 
+<p align="center"><img src="pidjmail-dates.png" alt="Date-based mail layout with demo messages" width="1000"></p>
+
 ## Скачать
 
-Последняя версия доступна в разделе **Releases**. Версия 0.2.7 — ранняя рабочая сборка.
+Последняя версия доступна в разделе **Releases**. Версия 0.2.8 — ранняя рабочая сборка.
 
 ➡️ **[Скачать последнюю версию Pidjmail](https://github.com/AdamAnomatik/Pidjmail-Releases/releases/latest)**
 
@@ -80,10 +85,10 @@
 В PowerShell:
 
 ```powershell
-Get-FileHash .\Pidjmail-Setup-0.2.7-x64.exe -Algorithm SHA256
+Get-FileHash .\Pidjmail-Setup-0.2.8-x64.exe -Algorithm SHA256
 ```
 
-Полученное значение должно совпасть с файлом `Pidjmail-Setup-0.2.7-x64.sha256.txt`.
+Полученное значение должно совпасть с файлом `Pidjmail-Setup-0.2.8-x64.sha256.txt`.
 
 ## Сообщить об ошибке
 

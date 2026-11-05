@@ -16,6 +16,9 @@ Back up the complete profile folder, including `encryption-key.json` and `Browse
 
 ## Features
 
+- Date-based mail, right-side reading or a Mail.ru-style list; persistent panel widths and collapsible navigation.
+- MDN read-receipt checkmarks and opt-in local MCP with in-app send/Trash approval. [MCP setup (Russian)](MCP.ru.md).
+
 - Multiple IMAP/SMTP accounts and a unified inbox, server folders and incoming mail updates through IMAP IDLE.
 - Replies, forwarding, drafts, scheduled sending and cancellation before SMTP transmission.
 - Incoming-mail filters, unread sender cards with separate message windows, Ctrl+F search and restoration from Trash.
@@ -30,9 +33,11 @@ Back up the complete profile folder, including `encryption-key.json` and `Browse
 
 <p align="center"><img src="pidjmail-chats.png" alt="Chat service picker" width="1000"></p>
 
+<p align="center"><img src="pidjmail-dates.png" alt="Date-based mail layout with demo messages" width="1000"></p>
+
 ## Download
 
-The latest release is available in **Releases**. Version 0.2.7 is an early working release.
+The latest release is available in **Releases**. Version 0.2.8 is an early working release.
 
 ➡️ **[Download the latest version of Pidjmail](https://github.com/AdamAnomatik/Pidjmail-Releases/releases/latest)**
 
@@ -81,10 +86,10 @@ Real provider accounts and paid AI requests still require validation. Local TLS 
 You can verify the installer checksum in PowerShell:
 
 ```powershell
-Get-FileHash .\Pidjmail-Setup-0.2.7-x64.exe -Algorithm SHA256
+Get-FileHash .\Pidjmail-Setup-0.2.8-x64.exe -Algorithm SHA256
 ```
 
-The result must match the value published in `Pidjmail-Setup-0.2.7-x64.sha256.txt`.
+The result must match the value published in `Pidjmail-Setup-0.2.8-x64.sha256.txt`.
 
 ## Report an issue
 

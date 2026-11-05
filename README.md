@@ -16,6 +16,10 @@ Back up the complete profile folder, including `encryption-key.json` and `Browse
 
 ## Features
 
+New in 0.2.10: two panes in one window — mail, calendar, contacts or boards alongside chat. Click Two panes in the top toolbar, swap sides, drag the divider or stack the panes. The layout is saved.
+
+<p align="center"><img src="pidjmail-dual.png" alt="Two panes with demo mail and a chat service picker" width="1000"></p>
+
 New in 0.2.9: a separate chat window alongside mail, remembered chat service, compact navigation, per-service zoom, badges and desktop notifications. Recipient suggestions use contacts and cached sent mail; inbox refresh runs independently of long folder scans.
 
 - Date-based mail, right-side reading or a Mail.ru-style list; persistent panel widths and collapsible navigation.
@@ -41,7 +45,7 @@ New in 0.2.9: a separate chat window alongside mail, remembered chat service, co
 
 ## Download
 
-The latest release is available in **Releases**. Version 0.2.9 is an early working release.
+The latest release is available in **Releases**. Version 0.2.10 is an early working release.
 
 ➡️ **[Download the latest version of Pidjmail](https://github.com/AdamAnomatik/Pidjmail-Releases/releases/latest)**
 
@@ -94,10 +98,10 @@ Real provider accounts and paid AI requests still require validation. Local TLS 
 You can verify the installer checksum in PowerShell:
 
 ```powershell
-Get-FileHash .\Pidjmail-Setup-0.2.9-x64.exe -Algorithm SHA256
+Get-FileHash .\Pidjmail-Setup-0.2.10-x64.exe -Algorithm SHA256
 ```
 
-The result must match the value published in `Pidjmail-Setup-0.2.9-x64.sha256.txt`.
+The result must match the value published in `Pidjmail-Setup-0.2.10-x64.sha256.txt`.
 
 ## Report an issue
 

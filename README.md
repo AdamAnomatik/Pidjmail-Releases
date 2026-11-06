@@ -16,7 +16,7 @@ Back up the complete profile folder, including `encryption-key.json` and `Browse
 
 ## Features
 
-New in 0.2.14: Classic mail / All tools interface modes, compact icon navigation, background inbox checks down to 5 seconds and automatic header history. Full-window Office/PDF/image previews with zoom and rotation; notification display selection and opacity (notifications only). The API assistant searches actual Pidjmail data and creates drafts, events and tasks; web sign-in still requires a separate MCP connection for local data access.
+New in 0.2.15: much faster search and message list in large mailboxes, lighter startup. Refreshed look: readable small text, a one-row top bar with a search field, a larger message subject and a calm graphite dark theme. Window sync with app data is more reliable, and recent message bodies are cached in the background again.
 
 <p align="center"><img src="pidjmail-modern.png" alt="Compact combined workspace with demo mail" width="1000"></p>
 
@@ -63,7 +63,7 @@ New in 0.2.9: a separate chat window alongside mail, remembered chat service, co
 
 ## Download
 
-The latest release is available in **Releases**. Version 0.2.14 is an early working release.
+The latest release is available in **Releases**. Version 0.2.15 is an early working release.
 
 ➡️ **[Download the latest version of Pidjmail](https://github.com/AdamAnomatik/Pidjmail-Releases/releases/latest)**
 

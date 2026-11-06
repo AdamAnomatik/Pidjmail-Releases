@@ -16,7 +16,7 @@ Back up the complete profile folder, including `encryption-key.json` and `Browse
 
 ## Features
 
-New in 0.2.16: the Pidjmail assistant connects in two clicks, free on this computer (offline, mail stays on your PC) or through your own OpenRouter account; your own OpenAI/Anthropic key is under Advanced. It reads attachments (PDF, Excel, Word), builds registers such as waybill lists and saves them to Excel. Embedded third-party web chats were removed.
+New in 0.2.17: large mailboxes stay responsive. Marking, moving and opening mail no longer rewrites the whole mail cache on every action, bulk actions use one connection to the mail server, and the window receives only what changed. The taskbar shows the Pidjmail icon again, and the free on-device assistant is more reliable.
 
 <p align="center"><img src="pidjmail-modern.png" alt="Compact combined workspace with demo mail" width="1000"></p>
 
@@ -63,7 +63,7 @@ New in 0.2.9: a separate chat window alongside mail, remembered chat service, co
 
 ## Download
 
-The latest release is available in **Releases**. Version 0.2.16 is an early working release.
+The latest release is available in **Releases**. Version 0.2.17 is an early working release.
 
 ➡️ **[Download the latest version of Pidjmail](https://github.com/AdamAnomatik/Pidjmail-Releases/releases/latest)**
 

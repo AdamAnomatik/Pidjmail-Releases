@@ -16,6 +16,12 @@ Back up the complete profile folder, including `encryption-key.json` and `Browse
 
 ## Features
 
+New in 0.2.14: Classic mail / All tools interface modes, compact icon navigation, background inbox checks down to 5 seconds and automatic header history. Full-window Office/PDF/image previews with zoom and rotation; notification display selection and opacity (notifications only). The API assistant searches actual Pidjmail data and creates drafts, events and tasks; web sign-in still requires a separate MCP connection for local data access.
+
+<p align="center"><img src="pidjmail-modern.png" alt="Compact combined workspace with demo mail" width="1000"></p>
+
+<p align="center"><img src="pidjmail-classic.png" alt="Classic mail interface with demo messages" width="1000"></p>
+
 New in 0.2.13: HTML signatures with embedded logos, attachments at the top, collapsed previous conversation, in-memory Office previews and Download all as ZIP. Incremental mail checks reuse the cache and workspace navigation sends smaller updates. Resize Pidjmail popups under Settings → Sounds and reminders → Desktop popups. Set width and height, preview the actual size and restore the default. Dimensions are saved and shared across notification sources.
 
 New in 0.2.12: choose both workspace panes independently, with saved section choices. Chat controls stay on one line, with extra actions under the menu in narrow panes. Set shared popup position, background colour and display time under Settings → Sounds and reminders → Desktop popups. The settings apply to mail, calendar, boards and connected chats; a Windows notification style remains available.
@@ -34,13 +40,13 @@ New in 0.2.10: two panes in one window — mail, calendar, contacts or boards al
 
 New in 0.2.9: a separate chat window alongside mail, remembered chat service, compact navigation, per-service zoom, badges and desktop notifications. Recipient suggestions use contacts and cached sent mail; inbox refresh runs independently of long folder scans.
 
-- Date-based mail, right-side reading or a Mail.ru-style list; persistent panel widths and collapsible navigation.
+- Date-based mail or a classic mail list; persistent panel widths and collapsible navigation.
 - MDN read-receipt checkmarks and opt-in local MCP with in-app send/Trash approval. [MCP setup (Russian)](MCP.ru.md).
 
 - Multiple IMAP/SMTP accounts and a unified inbox, server folders and incoming mail updates through IMAP IDLE.
 - Replies, forwarding, drafts, scheduled sending and cancellation before SMTP transmission.
 - Incoming-mail filters, unread sender cards with separate message windows, Ctrl+F search and restoration from Trash.
-- In-memory previews for text, images, PDF, spreadsheets and DOCX text, with an explicit **Save As** action.
+- In-memory previews for text, images, PDF, spreadsheets and DOCX pages, with an explicit **Save As** action.
 - Local calendar, contacts and kanban boards; turn an email into an event, task or contact.
 - Separate Mail / Calendar / Boards notifications, tray reminders, profile pictures and account signatures.
 - Russian and English interface; light, dark and system themes, custom app accents and per-folder/per-sender colours.
@@ -57,7 +63,7 @@ New in 0.2.9: a separate chat window alongside mail, remembered chat service, co
 
 ## Download
 
-The latest release is available in **Releases**. Version 0.2.13 is an early working release.
+The latest release is available in **Releases**. Version 0.2.14 is an early working release.
 
 ➡️ **[Download the latest version of Pidjmail](https://github.com/AdamAnomatik/Pidjmail-Releases/releases/latest)**
 
@@ -101,7 +107,7 @@ Notifications: enable them for the service and under Pidjmail Settings → Sound
 
 ## Current limitations
 
-The calendar, contacts and boards are local. Reminders and scheduled delivery require the application to be running. History loads in batches of 100 as you browse, without an overall message cap, and search uses the cache. Mail OAuth and cloud calendar/contact synchronization are not available yet. Chat integrations use official web apps; some services require sign-in again after restart, and calls/voice recording use your browser. Actual messaging after account sign-in has not been verified. Read receipts depend on the recipient's client; transmitted SMTP mail cannot be universally recalled. Spreadsheets show up to 2,000 rows and 100 columns; DOCX has a text-only preview. Complex Word layout and legacy DOC are not supported.
+The calendar, contacts and boards are local. Reminders and scheduled delivery require the application to be running. History headers load automatically in batches of 100 in the background, without an overall message cap, and search uses the cache. Mail OAuth and cloud calendar/contact synchronization are not available yet. Chat integrations use official web apps; some services require sign-in again after restart, and calls/voice recording use your browser. Actual messaging after account sign-in has not been verified. Read receipts depend on the recipient's client; transmitted SMTP mail cannot be universally recalled. Spreadsheets show up to 2,000 rows and 100 columns; DOCX shows document pages. Not all complex Office elements are reproduced, and legacy DOC is unsupported.
 
 Real provider accounts and paid AI requests still require validation. Local TLS protocol tests and desktop installation tests have passed. This public repository contains distribution documentation and release assets; source code is maintained privately.
 

@@ -16,7 +16,7 @@ Back up the complete profile folder, including `encryption-key.json` and `Browse
 
 ## Features
 
-New in 0.2.15: much faster search and message list in large mailboxes, lighter startup. Refreshed look: readable small text, a one-row top bar with a search field, a larger message subject and a calm graphite dark theme. Window sync with app data is more reliable, and recent message bodies are cached in the background again.
+New in 0.2.16: the Pidjmail assistant connects in two clicks, free on this computer (offline, mail stays on your PC) or through your own OpenRouter account; your own OpenAI/Anthropic key is under Advanced. It reads attachments (PDF, Excel, Word), builds registers such as waybill lists and saves them to Excel. Embedded third-party web chats were removed.
 
 <p align="center"><img src="pidjmail-modern.png" alt="Compact combined workspace with demo mail" width="1000"></p>
 
@@ -51,7 +51,7 @@ New in 0.2.9: a separate chat window alongside mail, remembered chat service, co
 - Separate Mail / Calendar / Boards notifications, tray reminders, profile pictures and account signatures.
 - Russian and English interface; light, dark and system themes, custom app accents and per-folder/per-sender colours.
 - VK WorkSpace (standalone messenger), Google Chat, Telegram, WhatsApp and MAX through separate web sessions, with a service picker and switcher.
-- OpenAI / Claude in a right-side chat panel: web app sign-in or your own API key and model. Embedded sign-in depends on the service; a browser fallback is available.
+- Pidjmail assistant: finds mail, reads attachments, builds registers and prepares drafts. Free on your computer or through your own OpenRouter, OpenAI or Anthropic account; it cannot send or delete mail by itself.
 - Encrypted local profiles, with separate real-mail and demo workspaces.
 - Interface recovery after a renderer crash, tray restore checks and a manual Restore interface tray action.
 
@@ -63,7 +63,7 @@ New in 0.2.9: a separate chat window alongside mail, remembered chat service, co
 
 ## Download
 
-The latest release is available in **Releases**. Version 0.2.15 is an early working release.
+The latest release is available in **Releases**. Version 0.2.16 is an early working release.
 
 ➡️ **[Download the latest version of Pidjmail](https://github.com/AdamAnomatik/Pidjmail-Releases/releases/latest)**
 
@@ -99,7 +99,7 @@ After IMAP/SMTP verification, choose a mail data folder and whether to download 
 
 The encrypted application profile defaults to `Pidjmail Data` beside the installation directory, on the same drive. Choosing another drive for the first mailbox also moves the profile. `%APPDATA%/Pidjmail-location.json` contains only the path pointer. An unavailable drive causes an error, never a silent fallback to C:. A legacy encrypted profile is preserved during migration.
 
-Profiles, mail credentials and optional API keys are encrypted using Windows user protection. Mail connects directly to your provider. Optional AI API requests go to the selected provider after your action. An enabled AI web app loads the official website in an isolated session. See [PRIVACY.md](PRIVACY.md).
+Profiles, mail credentials and assistant keys are encrypted using Windows user protection. Mail connects directly to your provider. The local assistant works offline; the cloud assistant sends your request to the service you chose, on your action. See [PRIVACY.md](PRIVACY.md).
 
 ## Notifications
 
@@ -109,7 +109,7 @@ Notifications: enable them for the service and under Pidjmail Settings → Sound
 
 The calendar, contacts and boards are local. Reminders and scheduled delivery require the application to be running. History headers load automatically in batches of 100 in the background, without an overall message cap, and search uses the cache. Mail OAuth and cloud calendar/contact synchronization are not available yet. Chat integrations use official web apps; some services require sign-in again after restart, and calls/voice recording use your browser. Actual messaging after account sign-in has not been verified. Read receipts depend on the recipient's client; transmitted SMTP mail cannot be universally recalled. Spreadsheets show up to 2,000 rows and 100 columns; DOCX shows document pages. Not all complex Office elements are reproduced, and legacy DOC is unsupported.
 
-Real provider accounts and paid AI requests still require validation. Local TLS protocol tests and desktop installation tests have passed. This public repository contains distribution documentation and release assets; source code is maintained privately.
+Real provider accounts and paid assistant requests still require validation. Local TLS protocol tests and desktop installation tests have passed. This public repository contains distribution documentation and release assets; source code is maintained privately.
 
 ## Verify SHA-256
 

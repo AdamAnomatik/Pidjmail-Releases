@@ -16,7 +16,7 @@ Back up the complete profile folder, including `encryption-key.json` and `Browse
 
 ## Features
 
-New in 0.2.17: large mailboxes stay responsive. Marking, moving and opening mail no longer rewrites the whole mail cache on every action, bulk actions use one connection to the mail server, and the window receives only what changed. The taskbar shows the Pidjmail icon again, and the free on-device assistant is more reliable.
+New in 0.2.18: Mailbird-style read receipts. Checkmarks on sent mail show who opened a message and when, Pidjmail notifies you when a receipt arrives, and it asks, always answers or never answers when a sender requests a receipt from you. Receipts use the standard mail mechanism (MDN), with no tracking pixels and no Pidjmail server. A Support item links to the same YooMoney and Boosty pages as the website.
 
 <p align="center"><img src="pidjmail-modern.png" alt="Compact combined workspace with demo mail" width="1000"></p>
 
@@ -63,7 +63,7 @@ New in 0.2.9: a separate chat window alongside mail, remembered chat service, co
 
 ## Download
 
-The latest release is available in **Releases**. Version 0.2.17 is an early working release.
+The latest release is available in **Releases**. Version 0.2.18 is an early working release.
 
 ➡️ **[Download the latest version of Pidjmail](https://github.com/AdamAnomatik/Pidjmail-Releases/releases/latest)**
 

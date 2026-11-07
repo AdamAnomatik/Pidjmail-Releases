@@ -16,7 +16,7 @@ Back up the complete profile folder, including `encryption-key.json` and `Browse
 
 ## Features
 
-New in 0.2.18: Mailbird-style read receipts. Checkmarks on sent mail show who opened a message and when, Pidjmail notifies you when a receipt arrives, and it asks, always answers or never answers when a sender requests a receipt from you. Receipts use the standard mail mechanism (MDN), with no tracking pixels and no Pidjmail server. A Support item links to the same YooMoney and Boosty pages as the website.
+New in 0.2.19: cloud drives in the All tools mode. A new Drives section opens Yandex Disk, Google Drive, Mail Cloud, OneDrive and Dropbox in their official web apps inside Pidjmail: browse, upload and download files, next to your mail in the second pane or in a separate window. Each drive has its own session, the sign-in is kept only in the encrypted profile, and only the provider's own sites open in its panel. To attach a file from a drive, download it first; direct attaching is not available yet.
 
 <p align="center"><img src="pidjmail-modern.png" alt="Compact combined workspace with demo mail" width="1000"></p>
 
@@ -63,7 +63,7 @@ New in 0.2.9: a separate chat window alongside mail, remembered chat service, co
 
 ## Download
 
-The latest release is available in **Releases**. Version 0.2.18 is an early working release.
+The latest release is available in **Releases**. Version 0.2.19 is an early working release.
 
 ➡️ **[Download the latest version of Pidjmail](https://github.com/AdamAnomatik/Pidjmail-Releases/releases/latest)**
 

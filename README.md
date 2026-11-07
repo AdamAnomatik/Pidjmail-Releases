@@ -16,6 +16,8 @@ Back up the complete profile folder, including `encryption-key.json` and `Browse
 
 ## Features
 
+New in 0.2.21: attachments as tiles with a download button for each file; a labelled divider before forwarded mail and earlier replies; drag folders to move them; recipients as chips you can drag between To, Cc and Bcc; drop files from Explorer into a message to attach them; Sent pinned under Inbox.
+
 New in 0.2.20: the three-column layout is back as a regular choice; reply, reply all and forward sit in the message toolbar; sent mail shows in Sent right away; the connection banner no longer flashes on a single dropped connection; choose whether the close button quits or hides Pidjmail in the tray; hidden drives and chats without notifications give their memory back.
 
 New in 0.2.19: cloud drives in the All tools mode. A new Drives section opens Yandex Disk, Google Drive, Mail Cloud, OneDrive and Dropbox in their official web apps inside Pidjmail: browse, upload and download files, next to your mail in the second pane or in a separate window. Each drive has its own session, the sign-in is kept only in the encrypted profile, and only the provider's own sites open in its panel. To attach a file from a drive, download it first; direct attaching is not available yet.
@@ -65,7 +67,7 @@ New in 0.2.9: a separate chat window alongside mail, remembered chat service, co
 
 ## Download
 
-The latest release is available in **Releases**. Version 0.2.20 is an early working release.
+The latest release is available in **Releases**. Version 0.2.21 is an early working release.
 
 ➡️ **[Download the latest version of Pidjmail](https://github.com/AdamAnomatik/Pidjmail-Releases/releases/latest)**
 

@@ -16,6 +16,8 @@ Back up the complete profile folder, including `encryption-key.json` and `Browse
 
 ## Features
 
+New in 0.2.22: when a connected service refuses a request, the Pidjmail assistant now says why in the conversation: an empty OpenAI API balance (a ChatGPT subscription does not pay for the API), a temporary rate limit that Pidjmail waits out automatically, a tokens-per-minute limit, an overloaded service or a low Anthropic balance.
+
 New in 0.2.21: attachments as tiles with a download button for each file; a labelled divider before forwarded mail and earlier replies; drag folders to move them; recipients as chips you can drag between To, Cc and Bcc; drop files from Explorer into a message to attach them; Sent pinned under Inbox.
 
 New in 0.2.20: the three-column layout is back as a regular choice; reply, reply all and forward sit in the message toolbar; sent mail shows in Sent right away; the connection banner no longer flashes on a single dropped connection; choose whether the close button quits or hides Pidjmail in the tray; hidden drives and chats without notifications give their memory back.
@@ -67,7 +69,7 @@ New in 0.2.9: a separate chat window alongside mail, remembered chat service, co
 
 ## Download
 
-The latest release is available in **Releases**. Version 0.2.21 is an early working release.
+The latest release is available in **Releases**. Version 0.2.22 is an early working release.
 
 ➡️ **[Download the latest version of Pidjmail](https://github.com/AdamAnomatik/Pidjmail-Releases/releases/latest)**
 

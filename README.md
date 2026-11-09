@@ -16,6 +16,8 @@ Back up the complete profile folder, including `encryption-key.json` and `Browse
 
 ## Features
 
+New in 0.2.24: check an existing mailbox under Settings → Mail accounts → Check connection. DNS, secure login and folder access appear in a selectable report without passwords or mail content. Network and server-limit errors now have specific explanations. This diagnostic update does not yet confirm recovery on the affected work computer.
+
 New in 0.2.23: a server refusing one folder no longer stops mail updates in later folders. The last complete cache is retained, persistent folder errors remain visible through successful Inbox checks, and older history cannot overwrite newly arrived mail.
 
 New in 0.2.22: when a connected service refuses a request, the Pidjmail assistant now says why in the conversation: an empty OpenAI API balance (a ChatGPT subscription does not pay for the API), a temporary rate limit that Pidjmail waits out automatically, a tokens-per-minute limit, an overloaded service or a low Anthropic balance.
@@ -71,7 +73,7 @@ New in 0.2.9: a separate chat window alongside mail, remembered chat service, co
 
 ## Download
 
-The latest release is available in **Releases**. Version 0.2.23 is an early working release.
+The latest release is available in **Releases**. Version 0.2.24 is an early working release.
 
 ➡️ **[Download the latest version of Pidjmail](https://github.com/AdamAnomatik/Pidjmail-Releases/releases/latest)**
 

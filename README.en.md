@@ -16,6 +16,8 @@ Back up the complete profile folder, including `encryption-key.json` and `Browse
 
 ## Features
 
+New in 0.2.23: a server refusing one folder no longer stops updates in later folders. Cached mail is retained, folder errors stay visible through successful Inbox checks, and older history cannot overwrite new arrivals.
+
 New in 0.2.13: HTML signatures with embedded logos, attachments at the top, collapsed previous conversation, in-memory Office previews and Download all as ZIP. Incremental mail checks reuse the cache and workspace navigation sends smaller updates. Resize Pidjmail popups under Settings → Sounds and reminders → Desktop popups. Set width and height, preview the actual size and restore the default. Dimensions are saved and shared across notification sources.
 
 New in 0.2.12: choose both workspace panes independently, with saved section choices. Chat controls stay on one line, with extra actions under the menu in narrow panes. Set shared popup position, background colour and display time under Settings → Sounds and reminders → Desktop popups. The settings apply to mail, calendar, boards and connected chats; a Windows notification style remains available.
@@ -57,7 +59,7 @@ New in 0.2.9: a separate chat window alongside mail, remembered chat service, co
 
 ## Download
 
-The latest release is available in **Releases**. Version 0.2.13 is an early working release.
+The latest release is available in **Releases**. Version 0.2.23 is an early working release.
 
 ➡️ **[Download the latest version of Pidjmail](https://github.com/AdamAnomatik/Pidjmail-Releases/releases/latest)**
 

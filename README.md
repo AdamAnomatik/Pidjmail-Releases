@@ -1,142 +1,43 @@
 # Pidjmail
 
-Back up the complete profile folder, including `encryption-key.json` and `Browser/Local State`, plus your selected mail folders. `profile.enc` alone is insufficient. If its key is unavailable, choose a complete backup folder or explicitly create a separate new profile. Original files are not automatically deleted.
+[English](README.en.md) · Русский
 
-[![Latest Release](https://img.shields.io/github/v/release/AdamAnomatik/Pidjmail-Releases?label=Latest%20Release)](https://github.com/AdamAnomatik/Pidjmail-Releases/releases/latest)
-[![Downloads](https://img.shields.io/github/downloads/AdamAnomatik/Pidjmail-Releases/total?label=Downloads)](https://github.com/AdamAnomatik/Pidjmail-Releases/releases)
-[![Windows](https://img.shields.io/badge/Platform-Windows-0078D4)](https://github.com/AdamAnomatik/Pidjmail-Releases/releases/latest)
+Почта, календарь, контакты, задачи и рабочие чаты в одном приложении для Windows. Разработчик — **adamanomatik**.
 
-**English** · [Русский](README.ru.md)
+[Скачать последнюю версию для Windows x64](https://github.com/AdamAnomatik/Pidjmail-Releases/releases/latest) · [Все изменения на русском и английском](CHANGELOG.md)
 
-<p align="center">
-  <img src="pidjmail-preview-en.png" alt="Pidjmail preview with sample mail" width="1000">
-</p>
+![Pidjmail с учебными письмами](pidjmail-modern.png)
 
-**Pidjmail** is a Windows email client with mail, a calendar, contacts and task boards in a calm, readable workspace.
+## Новое в 0.3.3
 
-## Features
+- Исправлено скачивание изображений и документов из VK WorkSpace.
+- Картинки можно вставить в письмо и подпись через Ctrl+V. Пустая тема заполняется именем первого вложения.
+- Настройки сохраняются автоматически. Быстрое переключение ящиков больше не теряет правки.
+- Исправлено накопление памяти при переподключении чатов и отмене запросов помощника adamanomatik.
 
-New in 0.2.24: check an existing mailbox under Settings → Mail accounts → Check connection. DNS, secure login and folder access appear in a selectable report without passwords or mail content. Network and server-limit errors now have specific explanations. This diagnostic update does not yet confirm recovery on the affected work computer.
+## Возможности
 
-New in 0.2.23: a server refusing one folder no longer stops mail updates in later folders. The last complete cache is retained, persistent folder errors remain visible through successful Inbox checks, and older history cannot overwrite newly arrived mail.
+- Несколько почтовых ящиков IMAP/SMTP, общий список, папки, поиск и подтверждения прочтения.
+- Черновики, ответы, пересылка, подписи с изображениями и отложенная отправка.
+- Просмотр PDF, изображений, таблиц и Word; скачивание файлов по отдельности или одним ZIP.
+- Календарь, контакты, доски задач; две настраиваемые рабочие панели.
+- VK WorkSpace, Google Chat, Telegram, WhatsApp, MAX и облачные диски в отдельных панелях.
+- Необязательный помощник adamanomatik: локально или через выбранный вами сервис.
+- Русский и английский интерфейс, светлая и тёмная темы.
 
-New in 0.2.22: when a connected service refuses a request, the Pidjmail assistant now says why in the conversation: an empty OpenAI API balance (a ChatGPT subscription does not pay for the API), a temporary rate limit that Pidjmail waits out automatically, a tokens-per-minute limit, an overloaded service or a low Anthropic balance.
+## Установка и обновление
 
-New in 0.2.21: attachments as tiles with a download button for each file; a labelled divider before forwarded mail and earlier replies; drag folders to move them; recipients as chips you can drag between To, Cc and Bcc; drop files from Explorer into a message to attach them; Sent pinned under Inbox.
+Скачайте установщик `.exe` из [последнего выпуска](https://github.com/AdamAnomatik/Pidjmail-Releases/releases/latest). Перед обновлением полностью выйдите из Pidjmail через меню значка в трее и установите программу в прежнюю папку. Отключать почтовый ящик не требуется.
 
-New in 0.2.20: the three-column layout is back as a regular choice; reply, reply all and forward sit in the message toolbar; sent mail shows in Sent right away; the connection banner no longer flashes on a single dropped connection; choose whether the close button quits or hides Pidjmail in the tray; hidden drives and chats without notifications give their memory back.
+Установщик не имеет цифровой подписи: Windows может показать предупреждение. Автоматического обновления пока нет.
 
-New in 0.2.19: cloud drives in the All tools mode. A new Drives section opens Yandex Disk, Google Drive, Mail Cloud, OneDrive and Dropbox in their official web apps inside Pidjmail: browse, upload and download files, next to your mail in the second pane or in a separate window. Each drive has its own session, the sign-in is kept only in the encrypted profile, and only the provider's own sites open in its panel. To attach a file from a drive, download it first; direct attaching is not available yet.
+Сохраняйте полную резервную копию папки профиля вместе с ключом и выбранными папками почты. Обычное удаление программы сохраняет профиль.
 
-<p align="center"><img src="pidjmail-modern.png" alt="Compact combined workspace with demo mail" width="1000"></p>
+## Что учитывать
 
-<p align="center"><img src="pidjmail-classic.png" alt="Classic mail interface with demo messages" width="1000"></p>
+- Почта подключается по IMAP/SMTP с паролем приложения; почтовый OAuth пока не поддерживается. Календарь и контакты локальные.
+- Веб-чаты и диски зависят от правил сервиса: иногда вход или звонки нужно открыть в браузере.
+- Для новых исходящих вложений: до 30 файлов и 100 МБ на письмо; итоговый размер также ограничивает ваш почтовый сервер. В подписи — до 10 изображений по 5 МБ, не более 20 МБ вместе. Скачивание больших входящих файлов доступно отдельно.
+- Локальному помощнику нужны разовая загрузка около 2,3 ГБ и примерно 8 ГБ памяти. Облачные запросы оплачиваются отдельно и передают данные выбранному сервису с вашего согласия.
 
-New in 0.2.13: HTML signatures with embedded logos, attachments at the top, collapsed previous conversation, in-memory Office previews and Download all as ZIP. Incremental mail checks reuse the cache and workspace navigation sends smaller updates. Resize Pidjmail popups under Settings → Sounds and reminders → Desktop popups. Set width and height, preview the actual size and restore the default. Dimensions are saved and shared across notification sources.
-
-New in 0.2.12: choose both workspace panes independently, with saved section choices. Chat controls stay on one line, with extra actions under the menu in narrow panes. Set shared popup position, background colour and display time under Settings → Sounds and reminders → Desktop popups. The settings apply to mail, calendar, boards and connected chats; a Windows notification style remains available.
-
-<p align="center"><img src="pidjmail-panes.png" alt="Independent pane choices with demo mail and sheets" width="1000"></p>
-
-<p align="center"><img src="pidjmail-popup.png" alt="Pidjmail notification preview" width="360"></p>
-
-New in 0.2.11: Google Sheets has its own list and read-only viewer, browser sign-in and a guide for setting up your own Google OAuth client. Mail history loads as you browse with no overall 100-message cap; only older headers are fetched, with text loaded on opening. [Google setup (Russian)](GOOGLE-SHEETS.ru.md).
-
-<p align="center"><img src="pidjmail-sheets.png" alt="Google Sheets viewer with sample data" width="1000"></p>
-
-New in 0.2.10: two panes in one window — mail, calendar, contacts or boards alongside chat. Click Two panes in the top toolbar, swap sides, drag the divider or stack the panes. The layout is saved.
-
-<p align="center"><img src="pidjmail-dual.png" alt="Two panes with demo mail and a chat service picker" width="1000"></p>
-
-New in 0.2.9: a separate chat window alongside mail, remembered chat service, compact navigation, per-service zoom, badges and desktop notifications. Recipient suggestions use contacts and cached sent mail; inbox refresh runs independently of long folder scans.
-
-- Date-based mail or a classic mail list; persistent panel widths and collapsible navigation.
-- MDN read-receipt checkmarks and opt-in local MCP with in-app send/Trash approval. [MCP setup (Russian)](MCP.ru.md).
-
-- Multiple IMAP/SMTP accounts and a unified inbox, server folders and incoming mail updates through IMAP IDLE.
-- Replies, forwarding, drafts, scheduled sending and cancellation before SMTP transmission.
-- Incoming-mail filters, unread sender cards with separate message windows, Ctrl+F search and restoration from Trash.
-- In-memory previews for text, images, PDF, spreadsheets and DOCX pages, with an explicit **Save As** action.
-- Local calendar, contacts and kanban boards; turn an email into an event, task or contact.
-- Separate Mail / Calendar / Boards notifications, tray reminders, profile pictures and account signatures.
-- Russian and English interface; light, dark and system themes, custom app accents and per-folder/per-sender colours.
-- VK WorkSpace (standalone messenger), Google Chat, Telegram, WhatsApp and MAX through separate web sessions, with a service picker and switcher.
-- Pidjmail assistant: finds mail, reads attachments, builds registers and prepares drafts. Free on your computer or through your own OpenRouter, OpenAI or Anthropic account; it cannot send or delete mail by itself.
-- Encrypted local profiles, with separate real-mail and demo workspaces.
-- Interface recovery after a renderer crash, tray restore checks and a manual Restore interface tray action.
-
-<p align="center"><img src="pidjmail-chats.png" alt="Chat service picker" width="1000"></p>
-
-<p align="center"><img src="pidjmail-dates.png" alt="Date-based mail layout with demo messages" width="1000"></p>
-
-<p align="center"><img src="pidjmail-recipients.png" alt="Recipient suggestions with demo contacts" width="1000"></p>
-
-## Download
-
-The latest release is available in **Releases**. Version 0.2.24 is an early working release.
-
-➡️ **[Download the latest version of Pidjmail](https://github.com/AdamAnomatik/Pidjmail-Releases/releases/latest)**
-
-### Files
-
-- `Pidjmail-Setup-x.y.z-x64.exe` — application installer.
-- `Pidjmail-Setup-x.y.z-x64.sha256.txt` — SHA-256 checksum for verifying the downloaded file.
-
-## System requirements
-
-- 64-bit Windows. This release was tested on Windows 11 x64.
-- Internet access and a supported IMAP/SMTP account for real mail.
-- Node.js is not required.
-
-## Installation
-
-![Pidjmail installer](pidjmail-installer.png)
-
-1. Download the latest `Pidjmail-Setup-x.y.z-x64.exe`.
-2. Run the installer and choose an installation folder. Installation is for the current Windows user.
-3. Choose whether to create a desktop shortcut, then open Pidjmail from the Start menu or desktop. Minimizing keeps it running in the tray; Quit closes it.
-4. Connect an account using an app password, or choose **Take a look first** to explore sample data.
-
-The application and installer are currently **unsigned**. Provider-specific setup instructions are available in Settings.
-
-## Updating
-
-Close Pidjmail and run the new installer. Automatic updating is not available yet. Back up your profile before changing versions. A same-version reinstall has been tested; migration between future releases requires separate validation. Normal uninstall preserves your profile.
-
-## Data location
-
-After IMAP/SMTP verification, choose a mail data folder and whether to download attachments. Downloading continues in the background. Change the folder under Settings → Data storage. Preview/manual saving is the default; automatic attachment saving uses an explicitly chosen folder.
-
-The encrypted application profile defaults to `Pidjmail Data` beside the installation directory, on the same drive. Choosing another drive for the first mailbox also moves the profile. `%APPDATA%/Pidjmail-location.json` contains only the path pointer. An unavailable drive causes an error, never a silent fallback to C:. A legacy encrypted profile is preserved during migration.
-
-Profiles, mail credentials and assistant keys are encrypted using Windows user protection. Mail connects directly to your provider. The local assistant works offline; the cloud assistant sends your request to the service you chose, on your action. See [PRIVACY.md](PRIVACY.md).
-
-## Notifications
-
-Notifications: enable them for the service and under Pidjmail Settings → Sounds and reminders → Chats. Use the test button; Windows permissions and Do not disturb may suppress banners. Badges depend on service titles/web notifications, not a universal server unread count. Service Worker-only notifications are not separately forwarded.
-
-## Current limitations
-
-The calendar, contacts and boards are local. Reminders and scheduled delivery require the application to be running. History headers load automatically in batches of 100 in the background, without an overall message cap, and search uses the cache. Mail OAuth and cloud calendar/contact synchronization are not available yet. Chat integrations use official web apps; some services require sign-in again after restart, and calls/voice recording use your browser. Actual messaging after account sign-in has not been verified. Read receipts depend on the recipient's client; transmitted SMTP mail cannot be universally recalled. Spreadsheets show up to 2,000 rows and 100 columns; DOCX shows document pages. Not all complex Office elements are reproduced, and legacy DOC is unsupported.
-
-Real provider accounts and paid assistant requests still require validation. Local TLS protocol tests and desktop installation tests have passed. This public repository contains distribution documentation and release assets; source code is maintained privately.
-
-## Verify SHA-256
-
-You can verify the installer checksum in PowerShell:
-
-```powershell
-Get-FileHash .\Pidjmail-Setup-0.2.10-x64.exe -Algorithm SHA256
-```
-
-The result must match the value published in `Pidjmail-Setup-0.2.10-x64.sha256.txt`.
-
-## Report an issue
-
-➡️ **[Open an issue](https://github.com/AdamAnomatik/Pidjmail-Releases/issues/new/choose)**
-
-Please include your Pidjmail and Windows versions, reproduction steps, and a screenshot with private information removed. Never include passwords, API keys, profile files or private email content. See [SUPPORT.md](SUPPORT.md), [SECURITY.md](SECURITY.md) and [CHANGELOG.md](CHANGELOG.md).
-
-![Language](https://img.shields.io/badge/Language-TypeScript-3178C6?logo=typescript&logoColor=white)
-![Framework](https://img.shields.io/badge/Framework-Electron-47848F?logo=electron&logoColor=white)
-![UI](https://img.shields.io/badge/UI-React-149ECA?logo=react&logoColor=white)
+[Помощь и сообщения об ошибках](SUPPORT.md) · [Конфиденциальность](PRIVACY.md) · [Безопасность](SECURITY.md) · [Подключение MCP](MCP.ru.md) · [Google Таблицы](GOOGLE-SHEETS.ru.md)

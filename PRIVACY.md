@@ -8,7 +8,7 @@ The key in `encryption-key.json` is already wrapped by Windows DPAPI, not a plai
 
 ## Русский
 
-MCP выключен по умолчанию. При включении подключённый ИИ может искать/читать письма и локальные контакты, события, задачи, создавать черновики/события/задачи. Отправка и корзина требуют подтверждения в Pidjmail. Пароли, API-ключи и исходные файлы вложений через инструменты не выдаются. Сервер доступен только на loopback с отдельным ключом; экспорт конфигурации содержит этот ключ обычным текстом и предназначен для закрытого хранения. Отключение отзывает ключ. Внешний сервер/туннель автоматически не настраивается; неподтверждённые действия не сохраняются и не повторяются после перезапуска.
+MCP выключен по умолчанию. При включении подключённый adamanomatik может искать/читать письма и локальные контакты, события, задачи, создавать черновики/события/задачи. Отправка и корзина требуют подтверждения в Pidjmail. Пароли, API-ключи и исходные файлы вложений через инструменты не выдаются. Сервер доступен только на loopback с отдельным ключом; экспорт конфигурации содержит этот ключ обычным текстом и предназначен для закрытого хранения. Отключение отзывает ключ. Внешний сервер/туннель автоматически не настраивается; неподтверждённые действия не сохраняются и не повторяются после перезапуска.
 
 Почта соединяется напрямую с выбранным IMAP/SMTP-провайдером по TLS или обязательному STARTTLS. У Pidjmail нет собственного сервера почты, рекламного SDK или сбора аналитики. Чтение писем безопасным текстом не загружает внешние изображения и пиксели.
 
@@ -30,7 +30,7 @@ MCP выключен по умолчанию. При включении подк
 
 ## English
 
-MCP is off by default. When enabled, the connected AI can search/read mail and local contacts, events and tasks, and create drafts/events/tasks. Sending and moving mail to Trash require approval inside Pidjmail. Tools do not return mail passwords, API keys or original attachment files. The server uses loopback and a separate key. Configuration exports contain that key in plaintext and must be kept private; disabling access revokes it. No public server/tunnel is configured automatically. Unapproved actions are memory-only and are not replayed after restart.
+MCP is off by default. When enabled, the connected adamanomatik can search/read mail and local contacts, events and tasks, and create drafts/events/tasks. Sending and moving mail to Trash require approval inside Pidjmail. Tools do not return mail passwords, API keys or original attachment files. The server uses loopback and a separate key. Configuration exports contain that key in plaintext and must be kept private; disabling access revokes it. No public server/tunnel is configured automatically. Unapproved actions are memory-only and are not replayed after restart.
 
 Mail connects directly to the selected provider through TLS or mandatory STARTTLS. Pidjmail has no mail relay, advertising SDK or usage analytics. Text-only mail display does not load remote images or tracking pixels.
 

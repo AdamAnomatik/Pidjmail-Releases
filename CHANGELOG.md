@@ -1,260 +1,417 @@
 # История изменений / Changelog
 
-## 0.2.24 · 2026-11-09
-
-- Настройки → Почтовые ящики → «Проверить подключение»: DNS, защищённое подключение/вход и проверка папок по сохранённым параметрам.
-- Понятные причины сетевых ошибок, отказа входа, TLS и ограничений сервера. Сырые ответы сервера и данные писем в отчёт не попадают.
-- Отчёт с версией, сервером/портом, этапами и временем можно выделить и скопировать Ctrl+C.
-- Проверка выполняется без изменения кэша и отправки писем, с общим лимитом 30 секунд. Это диагностическое обновление; получение почты на проблемном рабочем компьютере ещё нужно проверить по его отчёту.
-- Устаревший результат истории при одновременном обновлении папки пропускается без лишнего сообщения об ошибке; недостающие заголовки запрашиваются повторно.
-- 234 unit/integration, 32 packaged и 32 installed passed. Обновление с 0.2.23 и переустановка сохранили тестовый аккаунт и подписи, удаление — все 70 файлов профиля. Все 74 файла приложения совпали с установщиком.
-
-## 0.2.23 · 2026-11-09
-
-- Недоступная папка больше не блокирует получение писем из следующих папок. Её последний полный кэш сохраняется; повторная проверка выполняется автоматически.
-- Успешная проверка «Входящих» не скрывает повторяющуюся ошибку других папок. Предупреждение сохраняется после перезапуска до успешной полной проверки.
-- Устаревшая загрузка истории не заменяет новые письма и контрольные точки папки.
-- Исправлена ошибка обновления значка в трее при завершении программы.
-- 179 unit/integration, 32 packaged и 32 installed passed. Обновление с 0.2.21 и переустановка сохранили тестовый аккаунт и подписи; удаление сохранило все 70 файлов профиля. Все 74 файла приложения совпали с содержимым установщика.
-- Выпуск unsigned; результаты проверки установщика и SHA-256 указаны в release notes.
-
-## 0.2.22 · 2026-11-07
-
-- Помощник Pidjmail показывает в разговоре настоящую причину отказа сервиса вместо «Запрос остановлен или не завершён».
-- Пустой API-баланс OpenAI отличается от ограничения частоты; в сообщении сказано, что подписка ChatGPT Plus не оплачивает API и баланс пополняется на platform.openai.com.
-- При ограничении частоты и перегрузке Pidjmail сам ждёт и повторяет запрос до двух раз (не дольше 20 секунд за раз).
-- Отдельные сообщения о минутном лимите токенов, перегрузке сервиса и нехватке средств на балансе Anthropic; текст ошибки сервиса не показывается.
-- 169 unit/integration, 31 packaged и 31 installed passed. Обновление с 0.2.21 и переустановка сохранили тестовый аккаунт и подписи, удаление сохранило все 71 файл профиля. Выпуск unsigned; SHA-256 указан в release notes.
-
-## 0.2.21 · 2026-11-07
-
-- Вложения: сводка «Вложений: N · размер», кнопка «Скачать все» (ZIP) и плитки с цветной меткой типа; у каждого файла своя кнопка «Скачать», просмотр — по нажатию на плитку.
-- Разделитель с подписью «Пересланное письмо» или «Предыдущая переписка» перед историей; пересылка развёрнута, ответы свёрнуты. Распознаются Thunderbird, Outlook, Gmail и Mail.ru.
-- Папки перемещаются перетаскиванием — внутрь другой папки или на верхний уровень.
-- Получатели — «чипы»: перетаскивание между «Кому», «Копия» и «Скрытая», Ctrl копирует.
-- Файлы из Проводника перетаскиваются в окно письма как вложения (до 20 МБ всего).
-- «Отправленные» закреплены под «Входящими».
-- 164 unit/integration, 31 packaged и 31 installed passed. Обновление с 0.2.20 и переустановка сохранили тестовый аккаунт и подписи, удаление сохранило все 70 файлов профиля. Выпуск unsigned; SHA-256 указан в release notes.
+## [0.3.3](https://github.com/AdamAnomatik/Pidjmail-Releases/releases/tag/v0.3.3) · Скачивание файлов и стабильность / Downloads and stability
 
-## 0.2.20 · 2026-11-07
-
-- Вернулся вид «Три колонки» (папки, список, письмо рядом) — в меню «Режим отображения» и в настройках.
-- «Ответить», «Ответить всем» и «Переслать» в верхней панели письма.
-- Отправленное письмо появляется в «Отправленных» сразу после отправки, не дожидаясь сохранения копии на сервере.
-- Плашка «Операция не выполнена» появляется только при повторяющемся или затяжном сбое связи; неверный пароль и проблемы с сертификатом — сразу.
-- Настройка «Кнопка «Закрыть» в окне»: закрывать программу или сворачивать в трей.
-- Скрытые облачные диски и чаты без уведомлений через 10–15 минут освобождают память и открываются снова без повторного входа.
-- Подтверждения прочтения распознаются надёжнее, в том числе нестандартные отчёты.
-- Окна программы больше не перекрываются разделителем двух панелей; у образца уведомления видна рамка; убрана подсказка о масштабе в просмотре вложений.
-- 159 unit/integration, 30 packaged и 30 installed passed. Обновление с 0.2.19 и переустановка сохранили тестовый аккаунт и подписи, удаление сохранило все файлы профиля. Выпуск unsigned; SHA-256 указан в release notes.
-
-## 0.2.19 · 2026-11-07
-
-- Облачные диски в режиме «Комбайн»: раздел «Диски» с Яндекс Диском, Google Диском, Облаком Mail, OneDrive и Dropbox в их официальных веб-версиях. Файлы можно смотреть, загружать и скачивать; диск открывается и во второй панели рядом с почтой, и в отдельном окне.
-- У каждого диска отдельная сессия; вход хранится только в зашифрованном профиле, внутри панели открываются только сайты самого сервиса. В классическом режиме дисков нет.
-- Прямого прикрепления файлов с диска к письму пока нет: файл нужно скачать и добавить как вложение. Google и Microsoft могут не пустить во встроенное окно — тогда поможет «В браузере».
-- 152 unit/integration, 29 packaged и 29 installed passed. Обновление с 0.2.18 и переустановка сохранили тестовый аккаунт и подписи, удаление сохранило все 70 файлов профиля. Выпуск unsigned; SHA-256 указан в release notes.
+**Русский**
 
-## 0.2.18 · 2026-11-07
+- Исправлено скачивание изображений и документов из VK WorkSpace.
+- Картинки можно вставлять в письмо и подпись через Ctrl+V. Если тема пуста, она заполняется именем первого вложения.
+- Настройки сохраняются автоматически; исправлена потеря изменений при быстром переключении ящиков.
+- Исправлены утечки ресурсов при переподключении чатов и отмене запросов adamanomatik.
+- Для новых вложений действует предел 30 файлов и 100 МБ на письмо; изображение подписи — до 5 МБ. Большие входящие файлы по-прежнему можно скачивать.
 
-- Отчёты о прочтении в стиле Mailbird: одна серая галочка — без запроса, две серые — запрошено, одна синяя — открыли не все, две синие — открыли все; при наведении видно, кто и когда открыл письмо и кого ещё ждём.
-- Уведомление «Письмо прочитано», когда приходит подтверждение; старые подтверждения из истории записываются без уведомлений.
-- Ответ на чужие запросы подтверждения: «Спрашивать», «Всегда отправлять» (только самому отправителю) или «Никогда не отправлять». Решение отмечается на сервере, если он это поддерживает, чтобы другие программы не спрашивали повторно. Свои письма, черновики, спам и корзина не участвуют.
-- Пункт «Поддержать» в боковом меню с теми же страницами ЮMoney и Boosty, что на сайте.
-- Тестовые и проверочные копии больше не перезаписывают ярлык установленной программы в меню «Пуск».
-- 148 unit/integration, 28 packaged и 28 installed passed. Обновление с 0.2.17 и переустановка сохранили тестовый аккаунт и подписи, удаление сохранило все 70 файлов профиля. Выпуск unsigned; SHA-256 указан в release notes.
+**English**
 
-## 0.2.17 · 2026-11-07
+- Fixed downloading images and documents from VK WorkSpace.
+- Paste images into messages and signatures with Ctrl+V. An empty subject uses the first attachment’s filename.
+- Settings save automatically; fixed losing edits when switching accounts quickly.
+- Fixed resource leaks when reconnecting chats and cancelling adamanomatik requests.
+- New outgoing attachments are limited to 30 files and 100 MB per message; signature images to 5 MB each. Large incoming files can still be downloaded.
 
-- Большие ящики работают плавнее: профиль и очередь отправки записываются сразу, а изменения почтового кэша собираются и записываются раз в 1,5 секунды и при выходе. Массовое действие сохраняется один раз и идёт через одно соединение с почтовым сервером.
-- Окно получает от программы только изменившиеся письма вместо копии всего ящика после каждого действия; во время синхронизации обновления окна реже занимают главный процесс.
-- На панели задач снова значок Pidjmail: тестовые и проверочные запуски больше не используют идентификатор установленной программы.
-- Локальный помощник: не останавливается посреди долгого ответа, сокращает длинные переписки под свою память, проверяет свободное место и продолжает загрузку после обрыва; ошибка запуска сервера модели больше не закрывает программу. Счётчик облачных запросов нельзя откатить сохранением настроек.
-- 139 unit/integration, 27 packaged и 27 installed passed. Обновление с 0.2.16 и переустановка сохранили тестовый аккаунт и подписи, удаление сохранило все 70 файлов профиля. Выпуск unsigned; SHA-256 указан в release notes.
+## [0.3.0](https://github.com/AdamAnomatik/Pidjmail-Releases/releases/tag/v0.3.0) · Статусы и панели / Read status and panels
 
-## 0.2.16 · 2026-11-06
+**Русский**
 
-- Помощник Pidjmail подключается в два клика: «Бесплатно на этом компьютере» скачивает движок llama.cpp и модель Qwen3-VL 4B (2,3 ГБ, закреплённые файлы с проверкой SHA-256 и докачкой) и работает без интернета; «Через OpenRouter» — вход в ваш аккаунт в браузере, оплата с вашего баланса.
-- Свой ключ OpenAI или Anthropic перенесён в «Дополнительно»; модель выбирается автоматически из доступных вашему аккаунту. Исправлено подключение ключа Anthropic.
-- Помощник читает вложения (PDF с текстовым слоем, Excel/CSV, Word) и собирает реестры, например по ТТН; реестр сохраняется в Excel вашей кнопкой. Сканы без текстового слоя пока не распознаются.
-- Счётчик облачных запросов и токенов за день и месяц, необязательный дневной лимит, подтверждение перед отправкой данных облачному сервису.
-- Встроенные веб-чаты сторонних сервисов удалены вместе с их сохранёнными cookies.
-- 128 unit/integration, 27 packaged и 27 installed passed. Обновление с 0.2.15 и переустановка сохранили тестовый аккаунт и подписи, удаление сохранило все 70 файлов профиля. Выпуск unsigned; SHA-256 указан в release notes.
+- Нажатие на письмо сразу отмечает его прочитанным. Круглый значок переключает статус обратно.
+- Панель разделов можно скрыть и вернуть; в отправленных показываются получатели.
 
-## 0.2.15 · 2026-11-06
+**English**
 
-- Быстрее с большим ящиком: поиск не пересобирает текст писем на каждую букву, ввод не ждёт фильтрации, счётчики папок считаются за один проход. Редко открываемые окна загружаются по требованию.
-- Обновлённый вид: текст не мельче 11 px, верхняя панель в одну строку с полем поиска, заметная кнопка «Написать письмо», крупнее тема письма, графитовая тёмная тема, затемнение без размытия под окнами, единые рамки фокуса. Пользовательские цвета сохраняются.
-- Собственные выпадающие списки режимов; переход в «Классическую почту» включает классический список.
-- Обновления почты имеют номер версии: при расхождении окно само запрашивает полное состояние и не теряет письма. Тексты свежих писем снова загружаются в фоне при выключенном скачивании вложений.
-- Стили XLSX читаются потоково, документы открываются по очереди (до 25 МБ), фоновая история сохраняется не чаще раза в 10 секунд.
-- 115 unit/integration, 26 packaged и 26 installed passed. Обновление с 0.2.14 и переустановка сохранили тестовый аккаунт и подписи, удаление сохранило все 65 файлов профиля. Выпуск unsigned; SHA-256 указан в release notes.
+- Clicking a message marks it read immediately. Use the round icon to toggle its status.
+- Hide and restore the section toolbar; sent messages show their recipients.
 
-## 0.2.14 · 2026-11-06
+## [0.2.29](https://github.com/AdamAnomatik/Pidjmail-Releases/releases/tag/v0.2.29) · Без долгого зависания архива / Fix for archive freezes
 
-- «Классическая почта» и «Комбайн», иконки разделов над поиском, режим отображения сверху. Входящие перед папками, компактные даты/письмо, ИИ справа от обеих панелей.
-- Проверка входящих в фоне с интервалом от 5 секунд; автоматическая подгрузка истории заголовков без отдельной кнопки. Срок доставки зависит от сервера и сети.
-- Уведомления: монитор, перенос за верхнюю строку и непрозрачность 35–100%; прозрачность главного окна не меняется.
-- Просмотр на всё окно: стили/объединения XLSX, страницы DOCX, масштаб, поворот PDF/изображений. Ctrl + колесо меняет масштаб, обычное колесо прокручивает. Сохранение вручную и ZIP остаются доступны.
-- Подтверждённые MDN обрабатываются без ожидания полного обхода папок. Одна галочка — отправлено, две цветные — получен MDN. Получатель вправе его не отправлять.
-- API-помощник использует локальные инструменты Pidjmail: поиск/чтение, контакты, календарь, доски, создание черновиков/событий/задач. Отправка черновика вручную. Веб-чат требует отдельного MCP, платные и личные аккаунты не тестировались.
-- 110 unit/integration, 26 packaged и 26 installed passed. Обновление с 0.2.13 и переустановка сохранили тестовый аккаунт/подписи, удаление сохранило все 70 файлов профиля. Выпуск unsigned; SHA-256 указан в release notes.
+**Русский**
 
-## 0.2.13 · 2026-11-06
+- Исправлено длительное зависание при обновлении больших почтовых архивов.
+- Письма и существующие отметки сохраняются; переподключать ящик не нужно.
 
-- HTML-подписи со ссылками и встроенными CID-логотипами, картинки подписи не дублируются в списке файлов. Вложения под отправителем, предыдущая переписка свёрнута и отделена.
-- Просмотр XLS/XLSX/CSV/ODS и текстовый просмотр DOCX в памяти, без сохранения файлов; сохранение всех настоящих вложений одним ZIP. DOCX без сложного оформления; таблицы до 2000 строк и 100 столбцов.
-- Проверка почты повторно использует заголовки и кэш, обновляет флаги и загружает новые письма. Готовые тексты не обходятся повторно; переключение раскладки передаёт только профильные изменения.
+**English**
 
-- Ширина уведомления 280–640 px и высота 120–400 px, сохранение размеров, настоящий предпросмотр и сброс 360×156.
-- Увеличенное окно показывает больше текста, окна разного размера размещаются без наложения и вписываются в рабочую область монитора. Старые настройки получают прежний стандартный размер.
+- Fixed a long freeze when refreshing large mail archives.
+- Mail and existing marks are retained; there is no need to reconnect the account.
 
-- Проверены 102 unit/integration, 25 packaged и 25 installed scenarios; обновление с 0.2.12, повторная установка и удаление сохранили тестовый аккаунт и данные.
+## [0.2.28](https://github.com/AdamAnomatik/Pidjmail-Releases/releases/tag/v0.2.28) · Меньше памяти / Lower memory use
 
-## 0.2.12 · 2026-11-05
+**Русский**
 
-- Выбор обоих разделов в двух панелях; почта/календарь/контакты/доски/чат/таблицы, перестановка и сохранение выбора.
-- Собственные всплывающие уведомления: общий угол экрана, цвет фона, 3–30 секунд, предпросмотр, стек до трёх окон и переход по нажатию. Почта, календарь, доски и подключённые чаты используют общие параметры.
-- Заголовок чата в одну строку, компактные действия в узкой панели и меню «…».
-- Проверены 92 unit/integration, 22 packaged и 22 installed scenarios; upgrade 0.2.11 → 0.2.12/reinstall/uninstall сохранили тестовый аккаунт и данные.
+- Большие архивы требуют меньше памяти; сохранённые письма можно читать и цитировать без связи с сервером.
+- Добавлен журнал Pidjmail.log для разбора ошибок. Пароли и тексты писем в него не записываются.
+- После обновления старые версии не смогут прочитать обновлённый почтовый кэш. Перед установкой сделайте полную резервную копию.
 
-## 0.2.11 · 2026-11-05
+**English**
 
-- Google Таблицы в отдельном разделе: список, поиск, листы, просмотр ячеек с переходами по строкам и столбцам. Собственный Desktop OAuth-клиент и инструкция настройки; реальный аккаунт ещё не подключался.
-- Почтовая история без общего предела 100 писем: порции при просмотре, заголовки отдельно от текста и вложений, сохранение архива после обновления.
-- Длинный список отображает видимую часть; защита загруженной истории от устаревшей фоновой синхронизации.
-- Проверены 89 unit/integration, 20 packaged и 20 installed scenarios; upgrade 0.2.10 → 0.2.11/reinstall/uninstall сохраняют тестовый аккаунт и данные.
+- Large archives use less memory; cached messages can be read and quoted while the server is unavailable.
+- Added Pidjmail.log to help investigate errors. It does not record passwords or message text.
+- Older versions cannot read the updated mail cache. Make a complete backup before installing.
 
-## 0.2.10 · 2026-11-05
+## [0.2.27](https://github.com/AdamAnomatik/Pidjmail-Releases/releases/tag/v0.2.27) · Меньше нагрузки в фоне / Less background load
 
-- Режим двух панелей в одном окне: основной раздел (почта/календарь/контакты/доски) и чат. Отдельное окно чата тоже остаётся доступным.
-- Расположение рядом или друг под другом, перестановка, изменение размеров мышью/клавиатурой, восстановление расположения после перезапуска.
-- Адаптация почтовых дат и чтения к узкой панели; чат ограничен своей областью и скрывается для модальных диалогов.
-- Проверены 78 unit/integration, 18 packaged и 18 installed scenarios; upgrade 0.2.9 → 0.2.10/reinstall/uninstall сохранили тестовый профиль.
+**Русский**
 
+- Чаты и фоновое сохранение почты меньше мешают работе с большим архивом.
+- При выходе программа дожидается завершения записи данных.
 
-## 0.2.9 · 2026-11-05
+**English**
 
-- Чат в отдельном окне одновременно с почтой; последний выбранный сервис открывается снова.
-- Компактное меню без почтовых папок в чатах; VK 85% по умолчанию, сохраняемый масштаб 65–125%.
-- Всплывающие уведомления и счётчик чатов; отдельные настройки для четырёх разделов, проверка баннера и настройки Windows. Показ зависит от разрешений ОС и механизма уведомлений сервиса.
-- Приоритетная проверка входящих во время общего обхода папок, защита свежих данных от устаревшего результата.
-- Подсказки адресатов по контактам и загруженным исходящим в Кому/Копия/Скрытая копия; имя, адрес, транслитерация, клавиатура.
-- Меньше обработки почтового кэша при сохранении черновиков/настроек, бинарные вложения остаются в main. Большой пользовательский ящик не использовался для измерения скорости.
+- Chats and background mail saving cause fewer interruptions with large archives.
+- The app waits for data to finish saving before it exits.
 
-## 0.2.8 · 2026-11-05
+## [0.2.26](https://github.com/AdamAnomatik/Pidjmail-Releases/releases/tag/v0.2.26) · Большие вложения / Large attachments
 
-- Три режима почты: по датам с подсветкой непрочитанных, прежнее чтение справа и компактный список в стиле Mail.ru. Выбор в настройках внешнего вида.
-- Изменение ширины главного меню, дат, списка, планов дня и чата ИИ; сворачивание меню. Размеры сохраняются.
-- Компактное меню сервисов чата; значок ИИ без текста перенесён к аватару после горячих клавиш.
-- Серые/синие галочки исходящих по подтверждениям MDN и настройка запроса для новых писем. Отсутствие подтверждения не означает «не прочитано».
-- Локальный MCP: 13 инструментов, отдельный отзываемый ключ, экспорт конфигурации, подтверждение отправки/корзины внутри Pidjmail. [Руководство](MCP.ru.md). Публичный сервер/туннель и вход в аккаунты ИИ не настроены.
+**Русский**
 
-Three mail layouts, unread date highlights, persistent panel resizing and collapsed navigation, a compact chat picker and relocated AI icon. Outgoing read-receipt checkmarks reflect matching MDN confirmations. Opt-in local MCP with a revocable key and in-app send/Trash approval. Browser access requires a separately configured secure connection. Unsigned Windows installer.
+- Письмо открывается без ожидания загрузки всех вложений; файлы скачиваются по необходимости.
+- Большие файлы и ZIP скачиваются с меньшим расходом памяти. Сняты прежние ограничения просмотра письма по его общему размеру.
 
-## 0.2.7 · 2026-11-05
+**English**
 
-- VK WorkSpace открывает отдельный веб-клиент мессенджера вместо оболочки со всеми сервисами.
-- Сохранённые настройки и профиль не сбрасываются. VK может попросить войти заново на отдельной странице чатов.
-- Проверены настоящий экран до входа и автоматические сценарии подключения/сессий. Список чатов под реальным аккаунтом после изменения адреса пока не проверен.
+- Messages open without waiting for every attachment; files download when needed.
+- Large files and ZIPs download with lower memory use. Previous limits based on total message size have been removed.
 
-VK WorkSpace now opens the standalone messenger instead of the full suite shell. Existing profile/settings remain; VK may request sign-in again. The real welcome page and automated integration tests were checked; authenticated chat display still needs user verification.
+## [0.2.25](https://github.com/AdamAnomatik/Pidjmail-Releases/releases/tag/v0.2.25) · Обновление большой истории / Large-history updates
 
-## 0.2.6 · 2026-11-05
+**Русский**
 
-- Выбор во вкладке «Чат»: VK WorkSpace, Google Chat, Telegram, WhatsApp, MAX.
-- Отдельные изолированные веб-сессии, переключение и отключение выбранного сервиса, Save As для файлов, управление разрешением уведомлений.
-- Cookies и localStorage шифруются в профиле. Часть сервисов может требовать повторный вход после перезапуска; звонки/запись голоса открываются в браузере.
-- Проверены настоящие страницы до авторизации, тестовые сессии и изоляция. Учётные данные и QR-подтверждения не вводились; реальная переписка пока не проверена.
+- Исправлена ошибка обновления прочтения и избранного в больших почтовых архивах.
+- После обновления ящик не требуется отключать и подключать заново.
 
-Five official web chat integrations with a service picker/switcher and isolated sessions. Encrypted cookies/localStorage, explicit Save As, and per-service notification permission. Some services require re-login after restart; calls/voice recording use your browser. Sign-in pages were checked, actual authenticated messaging was not tested. Unsigned installer.
+**English**
 
-## 0.2.5 · 2026-11-05
+- Fixed updating read and starred status in large mail archives.
+- There is no need to remove and reconnect your mail account after updating.
 
-- Восстановление интерфейса при падении процесса и возврате из трея; проверка после пробуждения и разблокировки Windows.
-- Полные фоновые копии состояния больше не отправляются скрытому окну. Исправное окно перерисовывается без сброса текущего ввода.
-- Пункт «Восстановить интерфейс» в меню трея, экран ошибки с рабочей кнопкой, ограничение автоматических попыток восстановления.
-- Проверены принудительное падение, пустое окно и имитация resume: очередь и сохранённый черновик остаются. Полный ночной простой и физический sleep не проверялись; точный исходный ночной триггер не установлен.
-- Установщик остаётся неподписанным. Перед установкой выйти из Pidjmail через меню трея.
+## [0.2.24](https://github.com/AdamAnomatik/Pidjmail-Releases/releases/tag/v0.2.24) · Проверка подключения / Connection checks
 
-Restores the UI after a renderer crash or empty window, checks tray restore/resume, avoids background state traffic to a hidden renderer, and adds a tray recovery action and error screen. Existing saved drafts and queue survive recovery. Tests simulate resume and forced crashes; an overnight physical sleep was not performed.
+**Русский**
 
-## 0.2.4 · 2026-11-04
+- В настройках ящика появилась кнопка «Проверить подключение» с понятным отчётом.
+- Отчёт помогает отличить проблемы сети, пароля и ограничений сервера; его можно скопировать для поддержки.
 
-- Непрочитанные сгруппированы по отправителям: отдельные окна списка и письма.
-- Кнопка ИИ видна сразу; ChatGPT/Claude предлагают вход в приложение или настройку API.
-- Исправлена ложная ошибка «Папка изменилась» во время фоновой синхронизации.
-- Компактнее список писем, чтение и настройки. Подписи объединены в разделе «Письма» с выбором ящика.
-- Основной цвет приложения, общие и индивидуальные цвета папок и отправителей.
-- Проверены установка поверх 0.2.3, сохранение тестовой учётной записи, повторная установка и сохранность профиля после удаления.
+**English**
 
-Unread sender cards and separate message windows, a visible AI entry, fixed folder-generation handling during sync, tighter spacing, consolidated signatures, and app/folder/sender colours. Upgrade and profile retention verified with a disposable account. Installer remains unsigned.
+- Mail account settings now include Check connection with a readable report.
+- The report helps distinguish network, password and server-limit issues, and can be copied for support.
 
-## 0.2.3 · 2026-11-04
+## [0.2.23](https://github.com/AdamAnomatik/Pidjmail-Releases/releases/tag/v0.2.23) · Надёжнее обновление папок / More reliable folder updates
 
-- Все исправления ключа профиля и оформления установщика из предварительной 0.2.2.
-- Восстановление из profile.enc.bak при отсутствующем основном файле, без пустого профиля и повторной отправки очереди.
+**Русский**
 
-Includes 0.2.2 key preservation and installer styling, plus safe orphaned-backup recovery without an empty reset or delivery replay.
+- Ошибка одной папки больше не останавливает получение почты из остальных.
+- Сохраняются загруженные письма, а предупреждение об ошибке остаётся до успешной проверки.
 
-## 0.2.2 · 2026-11-04
+**English**
 
-- Сохранение защищённого Windows ключа при переносе профиля и поиск подходящего прежнего ключа при ошибке открытия.
-- Новый профиль создаётся отдельно только по выбору пользователя; исходные зашифрованные файлы сохраняются.
-- Блок сайта в установщике оформлен как в Simpltask/SimplNote: значок, заголовок, описание и кнопка.
+- An error in one folder no longer stops mail arriving in other folders.
+- Downloaded mail is retained, and an error warning stays until a successful check.
 
-Preserve the Windows-wrapped profile key during relocation, recover with an available matching key, and offer a separate fresh profile without deleting original files. Installer website block follows Simpltask/SimplNote styling.
+## [0.2.22](https://github.com/AdamAnomatik/Pidjmail-Releases/releases/tag/v0.2.22) · Понятные ошибки помощника / Clearer assistant errors
 
-## 0.2.1 · 2026-11-04
+**Русский**
 
-- Быстрое двухфазное подключение с выбором папки и вложений; фоновая загрузка с прогрессом и временем.
-- Настройки темы/языка работают во время синхронизации. Переименование/перенос папок и порядок разделов.
-- Просмотр/Save As или автоматическое сохранение вложений, независимые уведомления почты/календаря/досок, трей.
-- Правая панель ChatGPT/Claude: API или изолированное веб-приложение; вход зависит от сервиса, есть переход в браузер.
-- Новый значок, компактные настройки, About по образцу, ссылка на сайт и выбор ярлыка в установщике.
+- adamanomatik объясняет, когда на балансе сервиса нет средств, превышен лимит или сервис перегружен.
+- При временном ограничении запрос повторяется автоматически после короткой паузы.
 
-Two-phase connection, chosen data folders, progressive background sync, responsive themes/language, folder editing, attachment modes, category notifications and tray. ChatGPT/Claude right-side API/web panels, refreshed icon/settings/About, installer website and desktop shortcut choice.
+**English**
 
-## [0.2.0] — 2026-11-04
+- adamanomatik explains when a service has insufficient credit, a rate limit or an overload.
+- Temporary rate limits are retried automatically after a short pause.
 
-### Русский
+## [0.2.21](https://github.com/AdamAnomatik/Pidjmail-Releases/releases/tag/v0.2.21) · Вложения и получатели / Attachments and recipients
 
-Первый публичный выпуск установщика Pidjmail для Windows x64.
+**Русский**
 
-#### Добавлено
+- У каждого вложения своя кнопка скачивания, а все файлы можно сохранить одним ZIP.
+- Папки и получателей можно перемещать перетаскиванием; файлы из Проводника — сразу в письмо.
+- Пересланное письмо и предыдущая переписка отделены понятным разделителем.
 
-- Пять разделов: почта, календарь, контакты, доски и будущий чат.
-- Дерево серверных папок, IMAP IDLE с переподключением, восстановление из корзины.
-- Фильтры «условия → действие», поиск Ctrl+F и отключаемая группировка по отправителю.
-- Встроенный просмотр текста, изображений и PDF без отдельного сохранения; «Сохранить как…».
-- Локальные канбан-доски и задачи, события и контакты из письма.
-- Текстовые и звуковые напоминания, центр уведомлений, настройка громкости.
-- Профиль, аватар, подписи ящиков и инструкции подключения почты.
-- RU/EN, светлая, тёмная и системная темы.
-- Запрос подтверждения прочтения MDN и необязательный OpenAI/Claude API-помощник.
-- Установщик для текущего пользователя с выбором папки; обычное удаление сохраняет профиль.
+**English**
 
-#### Ограничения
+- Each attachment has a download button, and all files can be saved as one ZIP.
+- Drag folders and recipients to move them, and drop files from Explorer into a message.
+- Forwarded messages and previous conversation have a clear separator.
 
-Ранняя рабочая версия. OAuth, облачный календарь/контакты, полный архив и человеческий чат пока отсутствуют. Почтовые аккаунты и платные AI-запросы требуют реальной проверки. Подтверждение прочтения зависит от получателя; отмена доступна до SMTP-передачи. Установщик не подписан, автоматического обновления нет.
+## [0.2.20](https://github.com/AdamAnomatik/Pidjmail-Releases/releases/tag/v0.2.20) · Удобнее читать и отвечать / Easier reading and replies
 
-### English
+**Русский**
 
-First public Windows x64 installer release of Pidjmail.
+- Вернулся вид «Три колонки», а кнопки ответа и пересылки находятся над письмом.
+- Выбирайте, закрывает ли крестик программу или сворачивает её в трей.
+- Скрытые диски и чаты с выключенными уведомлениями освобождают память.
 
-#### Added
+**English**
 
-- Mail, Calendar, Contacts, Boards and a future Chat section.
-- Server folder tree, reconnecting IMAP IDLE and restoration from Trash.
-- Incoming-mail rules, Ctrl+F search and optional sender grouping.
-- In-memory text, image and PDF previews with a separate Save As action.
-- Local kanban tasks, plus events and contacts created from mail.
-- Sound and text reminders, notification centre and volume settings.
-- Profiles, avatars, account signatures and provider connection guides.
-- Russian/English and light/dark/system themes.
-- MDN read-receipt requests and an optional OpenAI/Claude API assistant.
-- Per-user installer with directory selection and profile-preserving normal uninstall.
+- The three-column view is back, with reply and forward buttons above the message.
+- Choose whether the close button quits the app or minimises it to the tray.
+- Hidden drives and chats with notifications disabled release memory.
 
-#### Limitations
+## [0.2.19](https://github.com/AdamAnomatik/Pidjmail-Releases/releases/tag/v0.2.19) · Облачные диски / Cloud drives
 
-Early working release. OAuth, cloud calendar/contact sync, full mail history and human chat are not available yet. Real mail accounts and paid AI requests require validation. Read receipts depend on the recipient; cancellation is available before SMTP transmission. The installer is unsigned and automatic updates are not available.
+**Русский**
+
+- Открывайте Яндекс Диск, Google Диск, Облако Mail, OneDrive и Dropbox внутри Pidjmail.
+- Диск можно разместить рядом с почтой или отдельным окном. Чтобы приложить файл к письму, сначала скачайте его.
+
+**English**
+
+- Open Yandex Disk, Google Drive, Mail Cloud, OneDrive and Dropbox inside Pidjmail.
+- Place a drive beside mail or in its own window. Download a file before attaching it to a message.
+
+## [0.2.18](https://github.com/AdamAnomatik/Pidjmail-Releases/releases/tag/v0.2.18) · Подтверждения прочтения / Read receipts
+
+**Русский**
+
+- Галочки в отправленных показывают полученные подтверждения прочтения. При наведении видно, кого ещё ждём.
+- Можно выбрать, спрашивать ли перед отправкой подтверждения, отправлять всегда или не отправлять.
+- Получатель может отказаться от подтверждения: отсутствие галочки не означает, что письмо не читали.
+
+**English**
+
+- Sent-mail checkmarks show received read receipts. Hover to see which recipients have not confirmed.
+- Choose whether to ask before sending read receipts, send them automatically or never send them.
+- Recipients may decline receipts: a missing checkmark does not mean the message was unread.
+
+## [0.2.17](https://github.com/AdamAnomatik/Pidjmail-Releases/releases/tag/v0.2.17) · Плавнее работа с архивом / Smoother mail archives
+
+**Русский**
+
+- Большие почтовые архивы меньше задерживают открытие писем, отметки и массовые действия.
+- Улучшены долгие ответы локального помощника и продолжение загрузки модели после обрыва.
+
+**English**
+
+- Large mail archives cause fewer delays when opening messages, changing marks or applying bulk actions.
+- Improved long local-assistant replies and resuming model downloads after interruptions.
+
+## [0.2.16](https://github.com/AdamAnomatik/Pidjmail-Releases/releases/tag/v0.2.16) · Помощник adamanomatik / adamanomatik assistant
+
+**Русский**
+
+- Помощника можно запустить бесплатно на компьютере или подключить через OpenRouter и собственный ключ сервиса.
+- Помощник читает поддерживаемые вложения и собирает реестры для сохранения в Excel.
+- Для локальной работы нужны разовая загрузка около 2,3 ГБ и примерно 8 ГБ памяти. Облачные запросы оплачиваются отдельно.
+
+**English**
+
+- Run the assistant locally for free, or connect through OpenRouter or your own service key.
+- The assistant reads supported attachments and prepares registers you can save as Excel files.
+- Local use requires an initial download of about 2.3 GB and around 8 GB of memory. Cloud requests are billed separately.
+
+## [0.2.15](https://github.com/AdamAnomatik/Pidjmail-Releases/releases/tag/v0.2.15) · Быстрее с большой почтой / Faster with large mailboxes
+
+**Русский**
+
+- Поиск, переключение разделов и работа с длинными списками стали отзывчивее.
+- Улучшены читаемость мелкого текста, тёмная тема и заметность кнопок.
+- Исправлено обновление списка писем при фоновой синхронизации.
+
+**English**
+
+- Search, navigation and long message lists are more responsive.
+- Improved small-text readability, the dark theme and button visibility.
+- Fixed message-list updates during background sync.
+
+## [0.2.14](https://github.com/AdamAnomatik/Pidjmail-Releases/releases/tag/v0.2.14) · Почта и комбайн / Mail and full workspace
+
+**Русский**
+
+- Выбирайте «Классическую почту» или «Комбайн» с дополнительными разделами.
+- Просмотр вложений открывается на всё окно; для PDF и изображений доступны масштаб и поворот.
+- Помощник adamanomatik умеет искать почту и готовить черновики, события и задачи по запросу.
+
+**English**
+
+- Choose Classic mail or the full workspace with additional sections.
+- Attachment previews fill the window, with zoom and rotation for PDFs and images.
+- The adamanomatik assistant can find mail and prepare drafts, events and tasks on request.
+
+## [0.2.13](https://github.com/AdamAnomatik/Pidjmail-Releases/releases/tag/v0.2.13) · Подписи и вложения / Signatures and attachments
+
+**Русский**
+
+- В подписи можно добавить ссылки и логотипы; предыдущая переписка сворачивается отдельно.
+- Вложения находятся над письмом. Документы можно посмотреть внутри приложения или скачать одним ZIP.
+- Размер всплывающих уведомлений теперь настраивается.
+
+**English**
+
+- Add links and logos to signatures; previous conversation is collapsed separately.
+- Attachments appear above the message. Preview documents in the app or download them as a ZIP.
+- Popup notification size is now adjustable.
+
+## [0.2.12](https://github.com/AdamAnomatik/Pidjmail-Releases/releases/tag/v0.2.12) · Панели и уведомления / Panes and notifications
+
+**Русский**
+
+- Для каждой рабочей панели можно независимо выбрать нужный раздел.
+- Настраивайте угол экрана, цвет и длительность всплывающих уведомлений и проверяйте результат в предпросмотре.
+
+**English**
+
+- Choose the section shown in each workspace pane independently.
+- Choose popup position, colour and duration, and preview the result.
+
+## [0.2.11](https://github.com/AdamAnomatik/Pidjmail-Releases/releases/tag/v0.2.11) · Архив почты и таблицы / Mail history and sheets
+
+**Русский**
+
+- Старая почта подгружается по мере просмотра без общего предела в 100 писем.
+- Добавлен просмотр Google Таблиц. Для подключения потребуется настроить собственный Google OAuth-клиент.
+
+**English**
+
+- Older mail loads as you browse, without an overall 100-message limit.
+- Added a Google Sheets viewer. Connecting it requires your own Google OAuth client.
+
+## [0.2.10](https://github.com/AdamAnomatik/Pidjmail-Releases/releases/tag/v0.2.10) · Две рабочие панели / Two workspace panes
+
+**Русский**
+
+- Откройте почту, календарь, контакты или задачи рядом с чатом в одном окне.
+- Панели можно менять местами, располагать рядом или друг под другом и менять их размеры.
+
+**English**
+
+- Use mail, calendar, contacts or tasks alongside chat in one window.
+- Swap panes, place them side by side or stack them, and resize them.
+
+## [0.2.9](https://github.com/AdamAnomatik/Pidjmail-Releases/releases/tag/v0.2.9) · Чат в отдельном окне / Chat in its own window
+
+**Русский**
+
+- Чат можно открыть рядом с почтой отдельным окном; выбранный сервис и масштаб запоминаются.
+- При вводе получателей появляются подсказки из контактов и отправленных писем.
+- Добавлены счётчики и уведомления подключённых чатов.
+
+**English**
+
+- Open chat in its own window beside mail; the selected service and zoom are remembered.
+- Recipient suggestions use your contacts and sent mail.
+- Added unread badges and notifications for connected chats.
+
+## [0.2.8](https://github.com/AdamAnomatik/Pidjmail-Releases/releases/tag/v0.2.8) · Режимы просмотра почты / Mail views
+
+**Русский**
+
+- Выбирайте почту по датам, список писем или чтение справа.
+- Сохраняются размеры панелей; боковое меню можно свернуть.
+- Добавлено отдельное подключение внешних помощников через MCP.
+
+**English**
+
+- Choose a date-based view, a message list or a reading pane on the right.
+- Panel sizes are saved, and the sidebar can be collapsed.
+- Added an optional MCP connection for external assistants.
+
+## [0.2.7](https://github.com/AdamAnomatik/Pidjmail-Releases/releases/tag/v0.2.7) · Отдельный чат VK / Standalone VK chat
+
+**Русский**
+
+- VK WorkSpace открывается сразу в отдельном веб-мессенджере.
+- После обновления VK может попросить войти заново; почтовые ящики и настройки сохраняются.
+
+**English**
+
+- VK WorkSpace now opens its standalone web messenger directly.
+- VK may ask you to sign in again after updating; mail accounts and settings are retained.
+
+## [0.2.6](https://github.com/AdamAnomatik/Pidjmail-Releases/releases/tag/v0.2.6) · Чаты рядом с почтой / Chat alongside mail
+
+**Русский**
+
+- В Pidjmail можно открыть VK WorkSpace, Google Chat, Telegram, WhatsApp и MAX.
+- Вход выполняется на странице выбранного сервиса. Некоторые функции, включая звонки, могут потребовать браузер.
+
+**English**
+
+- Open VK WorkSpace, Google Chat, Telegram, WhatsApp and MAX inside Pidjmail.
+- Sign in on the selected service’s page. Some features, including calls, may require a browser.
+
+## [0.2.5](https://github.com/AdamAnomatik/Pidjmail-Releases/releases/tag/v0.2.5) · Возврат из трея / Restoring from the tray
+
+**Русский**
+
+- Исправлено пустое окно при возврате из трея или после сна.
+- В меню трея появилась команда «Восстановить интерфейс».
+
+**English**
+
+- Fixed a blank window when restoring from the tray or waking from sleep.
+- Added Restore interface to the tray menu.
+
+## [0.2.4](https://github.com/AdamAnomatik/Pidjmail-Releases/releases/tag/v0.2.4) · Письма по отправителям / Mail by sender
+
+**Русский**
+
+- Непрочитанные письма сгруппированы по отправителям; письмо можно открыть отдельным окном.
+- Добавлены индивидуальные цвета папок и отправителей, настройки подписей собраны в одном месте.
+- Помощник adamanomatik доступен с верхней панели.
+
+**English**
+
+- Unread mail is grouped by sender, and messages can open in separate windows.
+- Set individual folder and sender colours, with signature settings in one place.
+- Open the adamanomatik assistant from the top toolbar.
+
+## [0.2.3](https://github.com/AdamAnomatik/Pidjmail-Releases/releases/tag/v0.2.3) · Восстановление профиля / Profile recovery
+
+**Русский**
+
+- Улучшено восстановление доступа к профилю при переносе приложения.
+- Для резервной копии сохраняйте всю папку профиля и выбранные папки почты.
+
+**English**
+
+- Improved profile recovery when moving the app.
+- For backups, keep the complete profile folder and your selected mail folders.
+
+## [0.2.2](https://github.com/AdamAnomatik/Pidjmail-Releases/releases/tag/v0.2.2) · Надёжнее перенос профиля / Safer profile moves
+
+**Русский**
+
+- Исправлено открытие зашифрованного профиля после переноса программы.
+- Если профиль не открывается, можно выбрать полную резервную копию. Исходные данные сохраняются.
+
+**English**
+
+- Fixed opening an encrypted profile after moving the app.
+- If a profile cannot be opened, choose a complete backup. Original data is preserved.
+
+## [0.2.1](https://github.com/AdamAnomatik/Pidjmail-Releases/releases/tag/v0.2.1) · Удобнее каждый день / Everyday improvements
+
+**Русский**
+
+- Подключение ящика и загрузка почты разделены: можно начать работу, пока письма загружаются в фоне.
+- Папки можно переименовывать и переносить; уведомления почты, календаря и задач настраиваются отдельно.
+- Добавлен помощник adamanomatik в боковой панели.
+
+**English**
+
+- Start using an account while its mail downloads in the background.
+- Rename and move folders, and configure mail, calendar and task notifications separately.
+- Added the adamanomatik assistant in the side panel.
+
+## [0.2.0](https://github.com/AdamAnomatik/Pidjmail-Releases/releases/tag/v0.2.0) · Первый выпуск / First release
+
+**Русский**
+
+- Почта, календарь, контакты и доски задач в одном приложении для Windows.
+- Несколько ящиков, черновики, отложенная отправка и просмотр вложений.
+- Русский и английский интерфейс, светлая и тёмная темы.
+
+**English**
+
+- Mail, calendar, contacts and task boards in one Windows app.
+- Multiple accounts, drafts, scheduled sending and attachment previews.
+- Russian and English interface, with light and dark themes.

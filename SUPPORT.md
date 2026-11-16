@@ -13,7 +13,7 @@
 
 [Откройте форму](https://github.com/AdamAnomatik/Pidjmail-Releases/issues/new/choose) и укажите версию приложения, Windows, шаги, ожидаемый и фактический результат. Для интерфейса полезны масштаб Windows и размер окна; для почты — название провайдера без адреса и пароля. Прикладывайте только очищенные от приватных данных скриншоты.
 
-При неопределённой доставке сначала проверьте «Отправленные» и веб-почту. Не отправляйте такое письмо повторно автоматически. Для ошибки AI достаточно названия сервиса, модели и безопасного текста ошибки; ключ не нужен.
+При неопределённой доставке сначала проверьте «Отправленные» и веб-почту. Не отправляйте такое письмо повторно автоматически. Для ошибки adamanomatik достаточно названия сервиса, модели и безопасного текста ошибки; ключ не нужен.
 
 ### Запрос функции
 
@@ -32,7 +32,7 @@
 
 [Open the form](https://github.com/AdamAnomatik/Pidjmail-Releases/issues/new/choose) and include the app and Windows versions, steps, expected and actual behavior. For UI issues, include Windows scaling and window size; for mail issues, the provider's name without an address or password. Remove private information from screenshots.
 
-For uncertain delivery, check Sent and webmail before retrying. Do not automatically resend. For AI errors, include the service/model and a sanitized error message; never include the API key.
+For uncertain delivery, check Sent and webmail before retrying. Do not automatically resend. For adamanomatik errors, include the service/model and a sanitized error message; never include the API key.
 
 ### Feature requests
 

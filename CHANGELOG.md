@@ -1,5 +1,34 @@
 # История изменений / Changelog
 
+## [0.4.0](https://github.com/AdamAnomatik/Pidjmail-Releases/releases/tag/v0.4.0) · Почта, доски и YouTube / Mail, boards and YouTube
+
+**Русский**
+
+- Изображения находятся внутри подписи, сохраняют положение и выбранную ширину. Поддерживается Ctrl+V; обычные вложения показываются над текстом с превью картинок.
+- Исправлено добавление изменившихся архивов и перенос файлов при пересылке. Вложенные файлы сохраняются в черновике вместе с содержимым.
+- Компактнее папки, разделы и нижние кнопки. Поиск раскрывается из лупы и предлагает искать везде, по отправителю или получателю. Панель инструментов сворачивается вправо; подключение почты перенесено в нижний плюс.
+- У непрочитанных писем ярко-голубой индикатор; жирным выделена тема. Адрес ящика под письмом можно скрыть в настройках. Баннер отмены закрывается по окончании отсрочки.
+- Выборочное наследование цвета вложенными папками, копирование/вставка цвета и редактирование HEX-кода.
+- Доски расположены сразу после почты: новые и переименовываемые столбцы, изменение ширины, компактные карточки, шрифт Golos Text, счётчик просроченных задач.
+- Напоминания о незавершённых задачах повторяются каждый час с заданного времени. Их можно отключить у задачи или выбрать однократный режим в настройках. При переводе в «Готово» повторы прекращаются.
+- В режиме «Комбайн» YouTube открывается над письмом. Панель меняет высоту и выносится в отдельное окно без перезагрузки страницы. Команда «Вернуть в Pidjmail» или закрытие отдельного окна возвращает её над письмом.
+- Компактные кнопки чатов, их уведомления в настройках, Ctrl+колесо для масштаба. Дополнительные мягкие звуки.
+- Получатели «Кому» и «Копия» показаны отдельными строками; адрес раскрывается нажатием на имя. Новые исходящие адресаты автоматически добавляются в контакты. Нажатие на аватар открывает профиль.
+- Разработчик — EmDiSoftware. Сайт: https://adamanomatik.github.io/.
+
+**English**
+
+- Inline signature images retain their position and chosen width. Paste with Ctrl+V; new attachments appear above the message, including image previews.
+- Fixed attaching changed archives and keeping files when forwarding. File contents persist in saved drafts.
+- Compact navigation, collapsible search and toolbar, sender/recipient search choices, a bottom add-mail button and optional mailbox labels. Bright blue unread indicators and an expiring undo-send banner.
+- Selective subfolder color inheritance, copy/paste colors and editable HEX codes.
+- Boards follow Mail in navigation: add and rename columns, resize their width, compact cards, Golos Text and an overdue-task badge.
+- Task reminders repeat hourly until completed or disabled, with a one-time option in settings.
+- In combined mode, YouTube docks above mail and can move into a separate window without reloading. Use Return to Pidjmail or close that window to dock it again.
+- Compact chat controls, notification settings and additional gentle sounds. Ctrl+wheel zoom.
+- Separate To/Cc rows with clickable names, automatic outgoing contacts and profile settings from the avatar.
+- Developed by EmDiSoftware.
+
 ## [0.3.3](https://github.com/AdamAnomatik/Pidjmail-Releases/releases/tag/v0.3.3) · Скачивание файлов и стабильность / Downloads and stability
 
 **Русский**

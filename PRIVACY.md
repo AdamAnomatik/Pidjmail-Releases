@@ -4,7 +4,7 @@
 
 The key in `encryption-key.json` is already wrapped by Windows DPAPI, not a plaintext password or AES key. Include it and `Browser/Local State` in backups. Original encrypted files are preserved when a key is unavailable; a separate fresh profile requires the user's explicit choice.
 
-4 November 2026 · Pidjmail 0.2.3
+17 November 2026 · Pidjmail 0.4.0
 
 ## Русский
 
@@ -61,3 +61,8 @@ Pidjmail desktop popups can show notification text outside the main window, incl
 При включённом «Доступ к почте и вложениям» облачный помощник передаёт выбранному сервису нужные для запроса результаты поиска, тексты писем и вложений и данные контактов/календаря/досок. Доступ можно выключить; скрытой фоновой отправки всего ящика нет. Инструментов отправки/удаления писем у помощника нет. Реестры сохраняются только по вашей кнопке. Выбор монитора и прозрачность уведомлений хранятся локально.
 
 With mail and attachment access enabled, the cloud assistant may send the selected service the search results, email and attachment text and relevant contacts/calendar/board data needed for your request. Disable this access for text-only help. It does not secretly upload the whole mailbox in the background and has no send/delete tools. Registers are saved only when you click Save. Notification display and opacity preferences stay local.
+
+
+В 0.4.0 новые адресаты исходящих писем автоматически добавляются в локальные зашифрованные контакты. YouTube открывает официальный сайт в отдельной сессии без доступа к почте и нативным функциям Pidjmail. Google/YouTube получают обычные браузерные запросы по своим условиям. Отделение окна не меняет сессию; разрешённые cookies и ограниченный localStorage сохраняются в зашифрованном профиле.
+
+In 0.4.0, new outgoing recipients are automatically added to local encrypted contacts. YouTube opens its official website in a separate session without access to mail or Pidjmail native functions. Google/YouTube receive normal browser requests under their terms. Detaching the window keeps the same session; allowed cookies and bounded localStorage are saved in the encrypted profile.

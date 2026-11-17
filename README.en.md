@@ -2,18 +2,21 @@
 
 English · [Русский](README.ru.md)
 
-Mail, calendar, contacts, tasks and work chats in one Windows app. Created by **adamanomatik**.
+Mail, calendar, contacts, tasks and work chats in one Windows app. Created by **EmDiSoftware**.
 
 [Download the latest Windows x64 version](https://github.com/AdamAnomatik/Pidjmail-Releases/releases/latest) · [Full bilingual changelog](CHANGELOG.md)
 
-![Pidjmail with sample mail](pidjmail-preview-en.png)
+![Pidjmail with sample mail](pidjmail-modern.png)
 
-## New in 0.3.3
+## New in 0.4.0
 
-- Fixed downloading images and documents from VK WorkSpace.
-- Paste images into messages and signatures with Ctrl+V. An empty subject uses the first attachment’s filename.
-- Settings save automatically. Switching accounts quickly no longer loses edits.
-- Fixed memory accumulation when reconnecting chats and cancelling adamanomatik assistant requests.
+- Inline signature images with adjustable size, text position and Ctrl+V paste.
+- Fixed archive attachments and forwarding files; attachment previews now appear above the message.
+- YouTube in combined mode: dock above mail, detach to a window and return without reloading.
+- Custom board columns, adjustable widths, hourly reminders and an overdue-task badge.
+- Compact controls, collapsible search with From/To choices and more gentle sounds.
+- Selective folder color inheritance, color copy/paste and editable HEX values.
+- Separate To/Cc rows, clickable recipient names and automatic contacts for new outgoing recipients.
 
 ## Features
 
@@ -36,7 +39,7 @@ Back up the complete profile folder, its key and your selected mail folders. A n
 ## Things to know
 
 - Mail uses IMAP/SMTP with an app password; mail OAuth is not supported yet. Calendar and contacts are local.
-- Web chats and drives depend on the service’s rules; sign-in or calls may require a browser.
+- Web chats, drives and YouTube depend on provider and network availability; sign-in or calls may require a browser. Task reminders require the app to remain running, including in the tray.
 - New outgoing attachments: up to 30 files and 100 MB per message; your mail server also sets its own limit. Signatures allow up to 10 images of 5 MB each, 20 MB combined. Large incoming files can still be downloaded separately.
 - The local assistant requires an initial download of about 2.3 GB and around 8 GB of memory. Cloud requests are billed separately and send data to your chosen service with your consent.
 

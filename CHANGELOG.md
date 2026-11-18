@@ -1,5 +1,19 @@
 # История изменений / Changelog
 
+## [0.5.7](https://github.com/AdamAnomatik/Pidjmail-Releases/releases/tag/v0.5.7) · Установка, выбор ящика и YouTube / Installer, account picker and YouTube
+
+- Во «Входящих» и «Отправленных» можно показать все ящики или выбрать один прямо под заголовком.
+- Панель действий и шапка письма стали компактнее. Счётчики показывают только непрочитанные письма.
+- Кнопка «Перейти на сайт» открывает сайт EmDiSoftware с экрана установки. Исправлено зависание при переходе к финальному экрану.
+- YouTube в «Комбайне» выключен по умолчанию. В настройках есть переключатель и инструкция. После подключения доступны свежие видео из подписок, список каналов и поиск.
+- Исправлены масштабирование чатов с помощью Ctrl + колеса и перекрытие меню встроенными панелями.
+
+- Switch between all accounts and a single account directly under the Inbox or Sent heading.
+- The message header and action bar take up less space. Mail counters show unread messages.
+- The installer opens the EmDiSoftware website from the progress page and finishes even after the button is used.
+- YouTube is off by default in the workspace. Settings include a toggle and connection instructions. Connect to see new subscription videos, browse channels and search.
+- Fixed Ctrl + mouse wheel zoom in chats and workspace panels covering menus.
+
 ## [0.5.0](https://github.com/AdamAnomatik/Pidjmail-Releases/releases/tag/v0.5.0) · Почтовые ящики и чаты / Mailboxes and chats
 
 **Русский**

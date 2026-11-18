@@ -1,5 +1,15 @@
 # История изменений / Changelog
 
+## [0.6.0](https://github.com/AdamAnomatik/Pidjmail-Releases/releases/tag/v0.6.0) · Память и работа с архивом / Memory and large mailboxes
+
+- Поиск по большому архиву освобождает память после запроса и сразу учитывает изменения имени отправителя, адресата и названия вложения.
+- При открытии длинной переписки содержимое свёрнутой цитаты загружается в окно при раскрытии. Сравнение файлов при переносе ящика расходует до 128 КиБ на буферы чтения независимо от размера архива.
+- При отключении Google приложение отменяет текущие запросы. Импорт календаря использует часовые пояса из выбранного файла. При повторной команде выхода Pidjmail дожидается записи профиля.
+
+- Searching a large archive releases search memory when the query finishes. Results reflect edits to sender names, recipient addresses and attachment names.
+- Opening a message with a long thread creates the quoted view when you expand it. Verifying files during a mailbox move uses up to 128 KiB of read buffers regardless of archive size.
+- Disconnecting Google cancels pending requests. Calendar imports use time zones from the selected file. A second quit request lets pending profile writes finish.
+
 ## [0.5.7](https://github.com/AdamAnomatik/Pidjmail-Releases/releases/tag/v0.5.7) · Установка, выбор ящика и YouTube / Installer, account picker and YouTube
 
 - Во «Входящих» и «Отправленных» можно показать все ящики или выбрать один прямо под заголовком.

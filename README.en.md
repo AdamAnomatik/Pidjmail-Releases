@@ -8,13 +8,11 @@ Mail, calendar, contacts, tasks and work chats in one Windows app. Created by **
 
 ![Pidjmail in English with sample mail](pidjmail-modern-en.png)
 
-## New in 0.5.7
+## New in 0.6.0
 
-- Switch between all accounts and a single account directly under the Inbox or Sent heading.
-- The message header and action bar take up less space. Mail counters show unread messages.
-- The installer opens the EmDiSoftware website from the progress page and finishes even after the button is used.
-- YouTube is off by default in the workspace. Settings include a toggle and connection instructions. Connect to see new subscription videos, browse channels and search.
-- Fixed Ctrl + mouse wheel zoom in chats and workspace panels covering menus.
+- Searching a large archive releases search memory when the query finishes. Results reflect edits to sender names, recipient addresses and attachment names.
+- Opening a message with a long thread creates the quoted view when you expand it. Verifying files during a mailbox move uses up to 128 KiB of read buffers regardless of archive size.
+- Disconnecting Google cancels pending requests. Calendar imports use time zones from the selected file. A second quit request lets pending profile writes finish.
 
 ## Features
 

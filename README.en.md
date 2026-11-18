@@ -6,7 +6,7 @@ Mail, calendar, contacts, tasks and work chats in one Windows app. Created by **
 
 [Download the latest Windows x64 version](https://github.com/AdamAnomatik/Pidjmail-Releases/releases/latest) · [Full bilingual changelog](CHANGELOG.md)
 
-![Pidjmail with sample mail](pidjmail-modern.png)
+![Pidjmail in English with sample mail](pidjmail-modern-en.png)
 
 ## New in 0.5.0
 

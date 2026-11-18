@@ -1,5 +1,25 @@
 # История изменений / Changelog
 
+## [0.5.0](https://github.com/AdamAnomatik/Pidjmail-Releases/releases/tag/v0.5.0) · Почтовые ящики и чаты / Mailboxes and chats
+
+**Русский**
+
+- «Мои ящики» переехали в выпадающее меню справа с общим и отдельными счётчиками непрочитанных, входящими и отправленными для каждого адреса.
+- В настройках ящика можно задать собственный цвет, название или картинку. Уведомление о новом письме показывает, в какой ящик оно пришло.
+- Главные папки получили заливку и суммарный счётчик писем, включая подпапки. Числа выровнены по правому краю.
+- В чатах работает Ctrl + колесо. Выпадающие меню остаются доступными поверх встроенного чата; VK WorkSpace позволяет оставить в своей панели только значок чатов.
+- Вход в YouTube открывается в обычном браузере. Встроенная панель продолжает показывать общедоступные видео.
+- Помощник называется **Pidjmail AI**.
+
+**English**
+
+- Mailboxes are in a dropdown on the right, with unified and per-account unread counts, inboxes and sent folders.
+- Set a custom mailbox color, name or image. New mail notifications identify the receiving account.
+- Root folder icons use their folder color and show a total including subfolders. Counts align on the right.
+- Use Ctrl + mouse wheel to zoom chats. Dropdowns stay accessible over the embedded view; VK WorkSpace offers a chats-only navigation option.
+- YouTube sign-in opens in a regular browser. The embedded panel continues to show public videos.
+- The assistant is now **Pidjmail AI**.
+
 ## [0.4.0](https://github.com/AdamAnomatik/Pidjmail-Releases/releases/tag/v0.4.0) · Почта, доски и YouTube / Mail, boards and YouTube
 
 **Русский**

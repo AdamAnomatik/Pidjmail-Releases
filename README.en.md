@@ -8,15 +8,13 @@ Mail, calendar, contacts, tasks and work chats in one Windows app. Created by **
 
 ![Pidjmail with sample mail](pidjmail-modern.png)
 
-## New in 0.4.0
+## New in 0.5.0
 
-- Inline signature images with adjustable size, text position and Ctrl+V paste.
-- Fixed archive attachments and forwarding files; attachment previews now appear above the message.
-- YouTube in combined mode: dock above mail, detach to a window and return without reloading.
-- Custom board columns, adjustable widths, hourly reminders and an overdue-task badge.
-- Compact controls, collapsible search with From/To choices and more gentle sounds.
-- Selective folder color inheritance, color copy/paste and editable HEX values.
-- Separate To/Cc rows, clickable recipient names and automatic contacts for new outgoing recipients.
+- A mailbox dropdown on the top right, with unread counts and separate inbox and sent views for each account.
+- Set an account name, image and color in Settings → Mail accounts. New mail popups identify the receiving mailbox.
+- Root folder totals include subfolders; counts align at the right edge.
+- Ctrl + mouse wheel zooms chats, and dropdowns stay accessible over the chat. VK WorkSpace has a chats-only view.
+- Use your browser to sign in to YouTube. The assistant is now **Pidjmail AI**.
 
 ## Features
 
@@ -25,7 +23,7 @@ Mail, calendar, contacts, tasks and work chats in one Windows app. Created by **
 - PDF, image, spreadsheet and Word previews; individual downloads or one ZIP.
 - Calendar, contacts, task boards and two configurable workspace panes.
 - VK WorkSpace, Google Chat, Telegram, WhatsApp, MAX and cloud-drive panels.
-- Optional adamanomatik assistant, running locally or through a service you choose.
+- Optional Pidjmail AI assistant, running locally or through a service you choose.
 - Russian and English interface, with light and dark themes.
 
 ## Install and update

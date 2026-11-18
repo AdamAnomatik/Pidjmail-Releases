@@ -4,9 +4,11 @@
 
 The key in `encryption-key.json` is already wrapped by Windows DPAPI, not a plaintext password or AES key. Include it and `Browser/Local State` in backups. Original encrypted files are preserved when a key is unavailable; a separate fresh profile requires the user's explicit choice.
 
-17 November 2026 · Pidjmail 0.4.0
+18 November 2026 · Pidjmail 0.5.0
 
 ## Русский
+
+Название, картинка и цвет ящика хранятся в зашифрованном профиле. Они используются в интерфейсе и уведомлениях, но не отправляются с письмами. Вход в YouTube открывает обычный браузер; его сеанс не переносится во встроенную панель.
 
 MCP выключен по умолчанию. При включении подключённый adamanomatik может искать/читать письма и локальные контакты, события, задачи, создавать черновики/события/задачи. Отправка и корзина требуют подтверждения в Pidjmail. Пароли, API-ключи и исходные файлы вложений через инструменты не выдаются. Сервер доступен только на loopback с отдельным ключом; экспорт конфигурации содержит этот ключ обычным текстом и предназначен для закрытого хранения. Отключение отзывает ключ. Внешний сервер/туннель автоматически не настраивается; неподтверждённые действия не сохраняются и не повторяются после перезапуска.
 
@@ -29,6 +31,8 @@ MCP выключен по умолчанию. При включении подк
 Вкладка «Чат» загружает официальные веб-приложения VK WorkSpace, Google Chat, Telegram, WhatsApp и MAX в раздельных сессиях. Почта и нативные функции Pidjmail недоступны этим страницам. При подключении сервис получает обычные запросы браузера по своим условиям. Cookies и ограниченный localStorage хранятся в зашифрованном профиле; IndexedDB и остальное веб-хранилище остаются в памяти, поэтому возможен повторный вход. Микрофон/камера запрещены, уведомления включаются по выбору. Загрузка файла открывает Save As. Отключение очищает активную сессию и её запись в текущем профиле; серверные сообщения и обычные зашифрованные резервные копии сохраняются.
 
 ## English
+
+Mailbox names, images and colors are saved in the encrypted profile. They are used in the interface and notifications and are excluded from outgoing email. YouTube sign-in opens your regular browser; its session stays separate from the embedded panel.
 
 MCP is off by default. When enabled, the connected adamanomatik can search/read mail and local contacts, events and tasks, and create drafts/events/tasks. Sending and moving mail to Trash require approval inside Pidjmail. Tools do not return mail passwords, API keys or original attachment files. The server uses loopback and a separate key. Configuration exports contain that key in plaintext and must be kept private; disabling access revokes it. No public server/tunnel is configured automatically. Unapproved actions are memory-only and are not replayed after restart.
 

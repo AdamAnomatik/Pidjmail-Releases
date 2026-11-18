@@ -1,5 +1,13 @@
 # История изменений / Changelog
 
+## [0.6.1](https://github.com/AdamAnomatik/Pidjmail-Releases/releases/tag/v0.6.1) · Видео и получатели / Video and recipients
+
+- При переходе в «Подписки» или на другую вкладку YouTube ролик остаётся видимым рядом со списком. Кнопка «К видео» возвращает проигрыватель на всю панель без перезагрузки.
+- В «Отправленных» один адрес отображается под одним именем. Сначала используется имя из контактов, затем последнее известное имя из отправленной почты. Если имени нет, показывается адрес.
+
+- The video stays visible beside the list when you switch to Subscriptions or another YouTube tab. Back to video restores the full player without reloading.
+- Sent mail uses a consistent name for each address. Pidjmail uses the contact name first, then the latest known name from sent mail, and shows the email address when no name is available.
+
 ## [0.6.0](https://github.com/AdamAnomatik/Pidjmail-Releases/releases/tag/v0.6.0) · Память и работа с архивом / Memory and large mailboxes
 
 - Поиск по большому архиву освобождает память после запроса и сразу учитывает изменения имени отправителя, адресата и названия вложения.

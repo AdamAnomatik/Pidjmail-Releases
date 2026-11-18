@@ -8,11 +8,10 @@ Mail, calendar, contacts, tasks and work chats in one Windows app. Created by **
 
 ![Pidjmail in English with sample mail](pidjmail-modern-en.png)
 
-## New in 0.6.0
+## New in 0.6.1
 
-- Searching a large archive releases search memory when the query finishes. Results reflect edits to sender names, recipient addresses and attachment names.
-- Opening a message with a long thread creates the quoted view when you expand it. Verifying files during a mailbox move uses up to 128 KiB of read buffers regardless of archive size.
-- Disconnecting Google cancels pending requests. Calendar imports use time zones from the selected file. A second quit request lets pending profile writes finish.
+- The video stays visible beside the list when you switch to Subscriptions or another YouTube tab. Back to video restores the full player without reloading.
+- Sent mail uses a consistent name for each address. Pidjmail uses the contact name first, then the latest known name from sent mail, and shows the email address when no name is available.
 
 ## Features
 

@@ -1,5 +1,15 @@
 # История изменений / Changelog
 
+## [0.6.2](https://github.com/AdamAnomatik/Pidjmail-Releases/releases/tag/v0.6.2) · Производительность / Performance
+
+- Быстрее работают фоновые проверки больших ящиков и массовые действия с письмами.
+- Список писем по датам расходует меньше памяти. Исправлено открытие ящиков с очень большими архивами.
+- Просмотр PDF и DOCX требует меньше памяти при открытии. Скрытые чаты и веб-панели освобождают память после завершения загрузок.
+
+- Background checks and bulk actions are faster in large mailboxes.
+- Browsing mail by date uses less memory. Fixed an issue that prevented very large mailboxes from opening.
+- Opening PDF and DOCX previews uses less memory. Hidden chats and web panels release memory after downloads finish.
+
 ## [0.6.1](https://github.com/AdamAnomatik/Pidjmail-Releases/releases/tag/v0.6.1) · Видео и получатели / Video and recipients
 
 - При переходе в «Подписки» или на другую вкладку YouTube ролик остаётся видимым рядом со списком. Кнопка «К видео» возвращает проигрыватель на всю панель без перезагрузки.

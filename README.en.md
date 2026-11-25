@@ -8,11 +8,15 @@ Mail, calendar, contacts, tasks and work chats in one Windows app. Created by **
 
 ![Pidjmail in English with sample mail](pidjmail-modern-en.png)
 
-## New in 0.6.2
+## New in 0.7.0
 
-- Background checks and bulk actions are faster in large mailboxes.
-- Browsing mail by date uses less memory. Fixed an issue that prevented very large mailboxes from opening.
-- Opening PDF and DOCX previews uses less memory. Hidden chats and web panels release memory after downloads finish.
+- Forwarding a message with attachments opens the composer at once while the files load in the background. The Send button always stays visible, and Ctrl+Enter sends.
+- Links from chats and YouTube open in your browser. You can sign in to YouTube directly in the Pidjmail panel.
+- A minimized Pidjmail stays in the taskbar with the unread count. Hiding it only in the tray is available in the Close button settings.
+- Notifications remember the exact place where you dragged them and find their monitor after a restart.
+- A signature picture no longer counts as an attachment. Picture links in messages, such as Yandex Disk buttons, stay visible.
+- A new attachment viewer: PDFs fit the width, pages are sharp with selectable text, and zoom and paging are easier.
+- Attachments and drafts use less memory. The new Inter font and a denser layout.
 
 ## Features
 

@@ -1,5 +1,23 @@
 # История изменений / Changelog
 
+## [0.7.0](https://github.com/AdamAnomatik/Pidjmail-Releases/releases/tag/v0.7.0) · Исправления, просмотр вложений и оформление / Fixes, attachment viewer and design
+
+- Пересылка письма с вложениями открывает окно сразу, файлы догружаются в фоне. Кнопка «Отправить» всегда видна внизу окна, отправка также по Ctrl+Enter.
+- Ссылки из чатов и YouTube открываются в браузере. Вход в аккаунт YouTube выполняется прямо в панели Pidjmail.
+- Свёрнутый Pidjmail остаётся в панели задач со счётчиком непрочитанных. Скрыть программу только в трей можно в настройках кнопки «Закрыть».
+- Уведомления запоминают точное место, куда их перетащили, и находят свой монитор после перезапуска.
+- Картинка из подписи больше не считается вложением. Ссылки-картинки в письмах, например кнопки Яндекс Диска, остаются видимыми.
+- Новое окно просмотра вложений: PDF по ширине, чёткие страницы с выделением текста, удобные масштаб и перелистывание.
+- Меньше расход памяти при работе с вложениями и черновиками. Новый шрифт Inter и более плотная вёрстка.
+
+- Forwarding a message with attachments opens the composer at once while the files load in the background. The Send button always stays visible, and Ctrl+Enter sends.
+- Links from chats and YouTube open in your browser. You can sign in to YouTube directly in the Pidjmail panel.
+- A minimized Pidjmail stays in the taskbar with the unread count. Hiding it only in the tray is available in the Close button settings.
+- Notifications remember the exact place where you dragged them and find their monitor after a restart.
+- A signature picture no longer counts as an attachment. Picture links in messages, such as Yandex Disk buttons, stay visible.
+- A new attachment viewer: PDFs fit the width, pages are sharp with selectable text, and zoom and paging are easier.
+- Attachments and drafts use less memory. The new Inter font and a denser layout.
+
 ## [0.6.2](https://github.com/AdamAnomatik/Pidjmail-Releases/releases/tag/v0.6.2) · Производительность / Performance
 
 - Быстрее работают фоновые проверки больших ящиков и массовые действия с письмами.

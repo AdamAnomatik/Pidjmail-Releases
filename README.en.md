@@ -8,15 +8,14 @@ Mail, calendar, contacts, tasks and work chats in one Windows app. Created by **
 
 ![Pidjmail in English with sample mail](pidjmail-modern-en.png)
 
-## New in 0.7.0
+## New in 0.7.1
 
-- Forwarding a message with attachments opens the composer at once while the files load in the background. The Send button always stays visible, and Ctrl+Enter sends.
-- Links from chats and YouTube open in your browser. You can sign in to YouTube directly in the Pidjmail panel.
-- A minimized Pidjmail stays in the taskbar with the unread count. Hiding it only in the tray is available in the Close button settings.
-- Notifications remember the exact place where you dragged them and find their monitor after a restart.
-- A signature picture no longer counts as an attachment. Picture links in messages, such as Yandex Disk buttons, stay visible.
-- A new attachment viewer: PDFs fit the width, pages are sharp with selectable text, and zoom and paging are easier.
-- Attachments and drafts use less memory. The new Inter font and a denser layout.
+- You can close the composer while a forwarded message's attachments are loading: the draft is saved and the files are added to it when ready. Forwarding loads files faster.
+- Logos and signature pictures in the forwarded text are no longer added as attachments.
+- Drawings and wide PDF sheets fill the window width and stay sharp when zoomed up to 600%.
+- Word documents show EMF and WMF logos, and table text no longer overlaps cell borders.
+- Fixed YouTube sign-in: the panel no longer gets a “browser not supported” message.
+- The new Settings → Memory section shows how much memory the mail window, each chat, YouTube and cloud drives use.
 
 ## Features
 

@@ -1,5 +1,21 @@
 # История изменений / Changelog
 
+## [0.7.1](https://github.com/AdamAnomatik/Pidjmail-Releases/releases/tag/v0.7.1) · Пересылка, чертежи, Word и YouTube / Forwarding, drawings, Word and YouTube
+
+- Окно нового письма можно закрыть, пока загружаются вложения пересылаемого письма: черновик сохранится, а файлы добавятся в него сами. Пересылка загружает файлы быстрее.
+- Логотипы и картинки подписи из текста пересылаемого письма больше не становятся вложениями.
+- Чертежи и широкие листы PDF занимают всю ширину окна и остаются чёткими при увеличении до 600 %.
+- В документах Word отображаются логотипы в форматах EMF и WMF, текст в таблицах не наезжает на рамки.
+- Исправлен вход в YouTube: панель больше не получает ответ «браузер не поддерживается».
+- Новый раздел «Настройки → Память» показывает, сколько памяти занимают окно почты, каждый чат, YouTube и облачные диски.
+
+- You can close the composer while a forwarded message's attachments are loading: the draft is saved and the files are added to it when ready. Forwarding loads files faster.
+- Logos and signature pictures in the forwarded text are no longer added as attachments.
+- Drawings and wide PDF sheets fill the window width and stay sharp when zoomed up to 600%.
+- Word documents show EMF and WMF logos, and table text no longer overlaps cell borders.
+- Fixed YouTube sign-in: the panel no longer gets a “browser not supported” message.
+- The new Settings → Memory section shows how much memory the mail window, each chat, YouTube and cloud drives use.
+
 ## [0.7.0](https://github.com/AdamAnomatik/Pidjmail-Releases/releases/tag/v0.7.0) · Исправления, просмотр вложений и оформление / Fixes, attachment viewer and design
 
 - Пересылка письма с вложениями открывает окно сразу, файлы догружаются в фоне. Кнопка «Отправить» всегда видна внизу окна, отправка также по Ctrl+Enter.

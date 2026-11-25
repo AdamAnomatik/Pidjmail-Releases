@@ -1,5 +1,21 @@
 # История изменений / Changelog
 
+## [0.7.2](https://github.com/AdamAnomatik/Pidjmail-Releases/releases/tag/v0.7.2) · Память, скорость и скачивание / Memory, speed and downloads
+
+- Чаты, которые сейчас не открыты, через минуту выгружаются из памяти. Вход сохраняется, чат загрузится заново при открытии. Чтобы уведомления чатов приходили постоянно, включите «Настройки → Память → Держать чаты загруженными».
+- YouTube и облачные диски в фоне тоже освобождают память через минуту. Данные писем занимают меньше памяти.
+- Письма и вложения, открытые одно за другим, открываются быстрее: соединение с почтовым сервером переиспользуется.
+- Сканы чертежей в PDF больше не рябят при уменьшении, а изображения не обрезаются снизу при увеличении.
+- При скачивании вложения или архива в углу окна видны ход загрузки и кнопка «Показать в папке».
+- В разделе «Память» видно, что занимает основной процесс, и каждый процесс подписан по содержимому.
+
+- Chats you are not viewing are unloaded from memory after a minute. You stay signed in, and a chat loads again when you open it. For live chat notifications, turn on Settings → Memory → Keep chats loaded.
+- YouTube and cloud drives in the background also free memory after a minute. Mail data takes less memory.
+- Messages and attachments opened one after another open faster: the mail server connection is reused.
+- Scanned drawings in PDFs no longer shimmer when reduced, and images are no longer cut off at the bottom when zoomed.
+- Saving an attachment or an archive shows progress in the corner and a Show in folder button.
+- The Memory section shows what the main process holds and names every process by what it shows.
+
 ## [0.7.1](https://github.com/AdamAnomatik/Pidjmail-Releases/releases/tag/v0.7.1) · Пересылка, чертежи, Word и YouTube / Forwarding, drawings, Word and YouTube
 
 - Окно нового письма можно закрыть, пока загружаются вложения пересылаемого письма: черновик сохранится, а файлы добавятся в него сами. Пересылка загружает файлы быстрее.

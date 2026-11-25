@@ -8,14 +8,14 @@ Mail, calendar, contacts, tasks and work chats in one Windows app. Created by **
 
 ![Pidjmail in English with sample mail](pidjmail-modern-en.png)
 
-## New in 0.7.1
+## New in 0.7.2
 
-- You can close the composer while a forwarded message's attachments are loading: the draft is saved and the files are added to it when ready. Forwarding loads files faster.
-- Logos and signature pictures in the forwarded text are no longer added as attachments.
-- Drawings and wide PDF sheets fill the window width and stay sharp when zoomed up to 600%.
-- Word documents show EMF and WMF logos, and table text no longer overlaps cell borders.
-- Fixed YouTube sign-in: the panel no longer gets a “browser not supported” message.
-- The new Settings → Memory section shows how much memory the mail window, each chat, YouTube and cloud drives use.
+- Chats you are not viewing are unloaded from memory after a minute. You stay signed in, and a chat loads again when you open it. For live chat notifications, turn on Settings → Memory → Keep chats loaded.
+- YouTube and cloud drives in the background also free memory after a minute. Mail data takes less memory.
+- Messages and attachments opened one after another open faster: the mail server connection is reused.
+- Scanned drawings in PDFs no longer shimmer when reduced, and images are no longer cut off at the bottom when zoomed.
+- Saving an attachment or an archive shows progress in the corner and a Show in folder button.
+- The Memory section shows what the main process holds and names every process by what it shows.
 
 ## Features
 
